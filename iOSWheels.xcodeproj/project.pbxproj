@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EDC8106A206CDBEB006325B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC81069206CDBEB006325B4 /* AppDelegate.m */; };
+		EDC8106D206CDBEB006325B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC8106C206CDBEB006325B4 /* ViewController.m */; };
+		EDC81070206CDBEB006325B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC8106E206CDBEB006325B4 /* Main.storyboard */; };
+		EDC81072206CDBEB006325B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC81071206CDBEB006325B4 /* Assets.xcassets */; };
+		EDC81075206CDBEB006325B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC81073206CDBEB006325B4 /* LaunchScreen.storyboard */; };
+		EDC81078206CDBEB006325B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC81077206CDBEB006325B4 /* main.m */; };
+		EDC8108F206CDC31006325B4 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC81080206CDC31006325B4 /* BaseViewController.m */; };
+		EDC81090206CDC31006325B4 /* UIButton+MTColor.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC81084206CDC31006325B4 /* UIButton+MTColor.m */; };
+		EDC81091206CDC31006325B4 /* UIColor+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC81087206CDC31006325B4 /* UIColor+MTExtension.m */; };
+		EDC81092206CDC32006325B4 /* NSArray+MTLog.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC8108A206CDC31006325B4 /* NSArray+MTLog.m */; };
+		EDC81093206CDC32006325B4 /* UIView+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC8108E206CDC31006325B4 /* UIView+MTExtension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EDC81065206CDBEA006325B4 /* iOSWheels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSWheels.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC81068206CDBEB006325B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EDC81069206CDBEB006325B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EDC8106B206CDBEB006325B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EDC8106C206CDBEB006325B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EDC8106F206CDBEB006325B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDC81071206CDBEB006325B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDC81074206CDBEB006325B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDC81076206CDBEB006325B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC81077206CDBEB006325B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDC81080206CDC31006325B4 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		EDC81081206CDC31006325B4 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		EDC81084206CDC31006325B4 /* UIButton+MTColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MTColor.m"; sourceTree = "<group>"; };
+		EDC81085206CDC31006325B4 /* UIButton+MTColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+MTColor.h"; sourceTree = "<group>"; };
+		EDC81087206CDC31006325B4 /* UIColor+MTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MTExtension.m"; sourceTree = "<group>"; };
+		EDC81088206CDC31006325B4 /* UIColor+MTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MTExtension.h"; sourceTree = "<group>"; };
+		EDC8108A206CDC31006325B4 /* NSArray+MTLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MTLog.m"; sourceTree = "<group>"; };
+		EDC8108B206CDC31006325B4 /* NSArray+MTLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MTLog.h"; sourceTree = "<group>"; };
+		EDC8108D206CDC31006325B4 /* UIView+MTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MTExtension.h"; sourceTree = "<group>"; };
+		EDC8108E206CDC31006325B4 /* UIView+MTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MTExtension.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDC81062206CDBEA006325B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDC8105C206CDBEA006325B4 = {
+			isa = PBXGroup;
+			children = (
+				EDC81067206CDBEA006325B4 /* iOSWheels */,
+				EDC81066206CDBEA006325B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDC81066206CDBEA006325B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDC81065206CDBEA006325B4 /* iOSWheels.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDC81067206CDBEA006325B4 /* iOSWheels */ = {
+			isa = PBXGroup;
+			children = (
+				EDC8107E206CDC31006325B4 /* General(通用) */,
+				EDC81068206CDBEB006325B4 /* AppDelegate.h */,
+				EDC81069206CDBEB006325B4 /* AppDelegate.m */,
+				EDC8106B206CDBEB006325B4 /* ViewController.h */,
+				EDC8106C206CDBEB006325B4 /* ViewController.m */,
+				EDC8106E206CDBEB006325B4 /* Main.storyboard */,
+				EDC81071206CDBEB006325B4 /* Assets.xcassets */,
+				EDC81073206CDBEB006325B4 /* LaunchScreen.storyboard */,
+				EDC81076206CDBEB006325B4 /* Info.plist */,
+				EDC81077206CDBEB006325B4 /* main.m */,
+			);
+			path = iOSWheels;
+			sourceTree = "<group>";
+		};
+		EDC8107E206CDC31006325B4 /* General(通用) */ = {
+			isa = PBXGroup;
+			children = (
+				EDC8107F206CDC31006325B4 /* Base(基础类) */,
+				EDC81082206CDC31006325B4 /* Category(分类) */,
+			);
+			path = "General(通用)";
+			sourceTree = "<group>";
+		};
+		EDC8107F206CDC31006325B4 /* Base(基础类) */ = {
+			isa = PBXGroup;
+			children = (
+				EDC81080206CDC31006325B4 /* BaseViewController.m */,
+				EDC81081206CDC31006325B4 /* BaseViewController.h */,
+			);
+			path = "Base(基础类)";
+			sourceTree = "<group>";
+		};
+		EDC81082206CDC31006325B4 /* Category(分类) */ = {
+			isa = PBXGroup;
+			children = (
+				EDC81083206CDC31006325B4 /* UIButton */,
+				EDC81086206CDC31006325B4 /* UIColor */,
+				EDC81089206CDC31006325B4 /* NSArray */,
+				EDC8108C206CDC31006325B4 /* View */,
+			);
+			path = "Category(分类)";
+			sourceTree = "<group>";
+		};
+		EDC81083206CDC31006325B4 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				EDC81084206CDC31006325B4 /* UIButton+MTColor.m */,
+				EDC81085206CDC31006325B4 /* UIButton+MTColor.h */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		EDC81086206CDC31006325B4 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				EDC81087206CDC31006325B4 /* UIColor+MTExtension.m */,
+				EDC81088206CDC31006325B4 /* UIColor+MTExtension.h */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		EDC81089206CDC31006325B4 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				EDC8108A206CDC31006325B4 /* NSArray+MTLog.m */,
+				EDC8108B206CDC31006325B4 /* NSArray+MTLog.h */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		EDC8108C206CDC31006325B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EDC8108D206CDC31006325B4 /* UIView+MTExtension.h */,
+				EDC8108E206CDC31006325B4 /* UIView+MTExtension.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDC81064206CDBEA006325B4 /* iOSWheels */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC8107B206CDBEB006325B4 /* Build configuration list for PBXNativeTarget "iOSWheels" */;
+			buildPhases = (
+				EDC81061206CDBEA006325B4 /* Sources */,
+				EDC81062206CDBEA006325B4 /* Frameworks */,
+				EDC81063206CDBEA006325B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSWheels;
+			productName = iOSWheels;
+			productReference = EDC81065206CDBEA006325B4 /* iOSWheels.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDC8105D206CDBEA006325B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "方新俊";
+				TargetAttributes = {
+					EDC81064206CDBEA006325B4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EDC81060206CDBEA006325B4 /* Build configuration list for PBXProject "iOSWheels" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDC8105C206CDBEA006325B4;
+			productRefGroup = EDC81066206CDBEA006325B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDC81064206CDBEA006325B4 /* iOSWheels */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDC81063206CDBEA006325B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC81075206CDBEB006325B4 /* LaunchScreen.storyboard in Resources */,
+				EDC81072206CDBEB006325B4 /* Assets.xcassets in Resources */,
+				EDC81070206CDBEB006325B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDC81061206CDBEA006325B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC81092206CDC32006325B4 /* NSArray+MTLog.m in Sources */,
+				EDC81093206CDC32006325B4 /* UIView+MTExtension.m in Sources */,
+				EDC8106D206CDBEB006325B4 /* ViewController.m in Sources */,
+				EDC8108F206CDC31006325B4 /* BaseViewController.m in Sources */,
+				EDC81091206CDC31006325B4 /* UIColor+MTExtension.m in Sources */,
+				EDC81078206CDBEB006325B4 /* main.m in Sources */,
+				EDC8106A206CDBEB006325B4 /* AppDelegate.m in Sources */,
+				EDC81090206CDC31006325B4 /* UIButton+MTColor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EDC8106E206CDBEB006325B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDC8106F206CDBEB006325B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDC81073206CDBEB006325B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDC81074206CDBEB006325B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDC81079206CDBEB006325B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EDC8107A206CDBEB006325B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDC8107C206CDBEB006325B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iOSWheels/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Promecn.iOSWheels;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDC8107D206CDBEB006325B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iOSWheels/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Promecn.iOSWheels;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDC81060206CDBEA006325B4 /* Build configuration list for PBXProject "iOSWheels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC81079206CDBEB006325B4 /* Debug */,
+				EDC8107A206CDBEB006325B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDC8107B206CDBEB006325B4 /* Build configuration list for PBXNativeTarget "iOSWheels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC8107C206CDBEB006325B4 /* Debug */,
+				EDC8107D206CDBEB006325B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDC8105D206CDBEA006325B4 /* Project object */;
+}
