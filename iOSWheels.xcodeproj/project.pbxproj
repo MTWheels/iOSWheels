@@ -54,6 +54,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BAD9387C206E46D6009E64AE /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				EDC81068206CDBEB006325B4 /* AppDelegate.h */,
+				EDC81069206CDBEB006325B4 /* AppDelegate.m */,
+				EDC8106B206CDBEB006325B4 /* ViewController.h */,
+				EDC8106C206CDBEB006325B4 /* ViewController.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
 		EDC8105C206CDBEA006325B4 = {
 			isa = PBXGroup;
 			children = (
@@ -73,11 +84,8 @@
 		EDC81067206CDBEA006325B4 /* iOSWheels */ = {
 			isa = PBXGroup;
 			children = (
+				BAD9387C206E46D6009E64AE /* AppDelegate */,
 				EDC8107E206CDC31006325B4 /* General(通用) */,
-				EDC81068206CDBEB006325B4 /* AppDelegate.h */,
-				EDC81069206CDBEB006325B4 /* AppDelegate.m */,
-				EDC8106B206CDBEB006325B4 /* ViewController.h */,
-				EDC8106C206CDBEB006325B4 /* ViewController.m */,
 				EDC8106E206CDBEB006325B4 /* Main.storyboard */,
 				EDC81071206CDBEB006325B4 /* Assets.xcassets */,
 				EDC81073206CDBEB006325B4 /* LaunchScreen.storyboard */,
