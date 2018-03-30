@@ -11,14 +11,12 @@
 @implementation NSArray (Log)
 
 - (NSString *)descriptionWithLocale:(id)locale indent:(NSUInteger)level{
-    NSMutableString *strM = [NSMutableString stringWithString:@"(\n"];
-    
+//    NSMutableString *strM = [NSMutableString stringWithString:@"(\n"];
+    NSMutableString *strM;
     [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         [strM appendFormat:@"\t%@,\n", obj];
     }];
-    
-    [strM appendString:@")"];
-    
+//    [strM appendString:@")"];
     return strM;
 }
 
