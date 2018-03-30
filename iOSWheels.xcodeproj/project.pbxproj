@@ -16,7 +16,6 @@
 		EDC8108F206CDC31006325B4 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC81080206CDC31006325B4 /* BaseViewController.m */; };
 		EDC81090206CDC31006325B4 /* UIButton+MTColor.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC81084206CDC31006325B4 /* UIButton+MTColor.m */; };
 		EDC81091206CDC31006325B4 /* UIColor+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC81087206CDC31006325B4 /* UIColor+MTExtension.m */; };
-		EDC81092206CDC32006325B4 /* NSArray+MTLog.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC8108A206CDC31006325B4 /* NSArray+MTLog.m */; };
 		EDC81093206CDC32006325B4 /* UIView+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC8108E206CDC31006325B4 /* UIView+MTExtension.m */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +36,6 @@
 		EDC81085206CDC31006325B4 /* UIButton+MTColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+MTColor.h"; sourceTree = "<group>"; };
 		EDC81087206CDC31006325B4 /* UIColor+MTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MTExtension.m"; sourceTree = "<group>"; };
 		EDC81088206CDC31006325B4 /* UIColor+MTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MTExtension.h"; sourceTree = "<group>"; };
-		EDC8108A206CDC31006325B4 /* NSArray+MTLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MTLog.m"; sourceTree = "<group>"; };
-		EDC8108B206CDC31006325B4 /* NSArray+MTLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MTLog.h"; sourceTree = "<group>"; };
 		EDC8108D206CDC31006325B4 /* UIView+MTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MTExtension.h"; sourceTree = "<group>"; };
 		EDC8108E206CDC31006325B4 /* UIView+MTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MTExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,8 +142,6 @@
 		EDC81089206CDC31006325B4 /* NSArray */ = {
 			isa = PBXGroup;
 			children = (
-				EDC8108A206CDC31006325B4 /* NSArray+MTLog.m */,
-				EDC8108B206CDC31006325B4 /* NSArray+MTLog.h */,
 			);
 			path = NSArray;
 			sourceTree = "<group>";
@@ -231,7 +226,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDC81092206CDC32006325B4 /* NSArray+MTLog.m in Sources */,
 				EDC81093206CDC32006325B4 /* UIView+MTExtension.m in Sources */,
 				EDC8106D206CDBEB006325B4 /* ViewController.m in Sources */,
 				EDC8108F206CDC31006325B4 /* BaseViewController.m in Sources */,
