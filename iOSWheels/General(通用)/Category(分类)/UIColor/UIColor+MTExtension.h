@@ -13,6 +13,12 @@
 
 
 /**
+ * 使用16进制数字创建颜色
+ */
++ (UIColor *)mt_colorWithHex:(uint32_t)hex;
+
+
+/**
  十六制颜色
  */
 + (UIColor *)mt_colorWithHexString:(NSString *)hexColorString;

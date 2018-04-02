@@ -12,6 +12,17 @@
 
 
 
+/**
+ * 使用16进制数字创建颜色
+ */
++ (UIColor *)mt_colorWithHex:(uint32_t)hex {
+    uint8_t r = (hex & 0xff0000) >> 16;
+    uint8_t g = (hex & 0x00ff00) >> 8;
+    uint8_t b = hex & 0x0000ff;
+    return [self colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1];
+}
+
+
 /** 十六制颜色*/
 + (UIColor *)mt_colorWithHexString:(NSString *)hexColorString {
     return [self mt_colorWithHexString:hexColorString alpha:1.0];
