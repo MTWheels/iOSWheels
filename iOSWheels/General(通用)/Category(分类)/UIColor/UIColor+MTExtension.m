@@ -68,4 +68,27 @@
 
 
 
+/**
+ 随机颜色
+ */
++ (UIColor *)mt_randomColor {
+    return [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0];
+}
+
+
+
+
+
++ (UIColor *)mt_gradientFromColor:(UIColor *)fromColor
+                          toColor:(UIColor *)toColor
+                        fromPoint:(CGPoint)fromPoint
+                          toPoint:(CGPoint)toPoint {
+    
+    return nil;
+}
+
+
+
+
+
 @end

@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "TestViewController.h"
 
 @interface ViewController ()
+- (IBAction)ClickEvent:(id)sender;
 
 @end
 
@@ -27,4 +29,11 @@
 }
 
 
+
+
+
+- (IBAction)ClickEvent:(id)sender {
+    TestViewController *testVC = [[TestViewController alloc] init];
+    [self.navigationController pushViewController:testVC animated:YES];
+}
 @end

@@ -29,4 +29,18 @@
                              alpha:(CGFloat)alpha;
 
 
+
+/**
+    随机颜色
+ */
++ (UIColor *)mt_randomColor;
+
+
+
++ (UIColor *)mt_gradientFromColor:(UIColor *)fromColor
+                          toColor:(UIColor *)toColor
+                        fromPoint:(CGPoint)fromPoint
+                          toPoint:(CGPoint)toPoint;
+
+
 @end
