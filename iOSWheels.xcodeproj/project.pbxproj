@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BAD9F73820731EE000D24C37 /* NSString+MTValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD9F73720731EE000D24C37 /* NSString+MTValidate.m */; };
+		BAD9F73B2073210F00D24C37 /* NSString+MTFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD9F73A2073210F00D24C37 /* NSString+MTFileManager.m */; };
+		BAD9F73F207369A500D24C37 /* NSString+MTSize.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD9F73E207369A500D24C37 /* NSString+MTSize.m */; };
 		BAF4AACE2071D70400AA8934 /* NSTimer+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF4AACD2071D70400AA8934 /* NSTimer+MTExtension.m */; };
 		BAF4AAD12071DB3000AA8934 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF4AAD02071DB3000AA8934 /* TestViewController.m */; };
 		BAF4AAD520720BE900AA8934 /* UIDevice+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF4AAD420720BE900AA8934 /* UIDevice+MTExtension.m */; };
 		BAF4AAD920720D2E00AA8934 /* UINavigationController+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF4AAD820720D2E00AA8934 /* UINavigationController+MTExtension.m */; };
 		BAF4AADD207213EC00AA8934 /* UIViewController+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF4AADC207213EC00AA8934 /* UIViewController+MTExtension.m */; };
 		BAF4AAE12072163600AA8934 /* NSDate+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF4AAE02072163600AA8934 /* NSDate+MTExtension.m */; };
+		BAF4AAE520723E1A00AA8934 /* UICollectionView+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF4AAE420723E1A00AA8934 /* UICollectionView+MTExtension.m */; };
 		EDC8106A206CDBEB006325B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC81069206CDBEB006325B4 /* AppDelegate.m */; };
 		EDC8106D206CDBEB006325B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC8106C206CDBEB006325B4 /* ViewController.m */; };
 		EDC81070206CDBEB006325B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC8106E206CDBEB006325B4 /* Main.storyboard */; };
@@ -26,6 +30,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BAD9F73620731EE000D24C37 /* NSString+MTValidate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MTValidate.h"; sourceTree = "<group>"; };
+		BAD9F73720731EE000D24C37 /* NSString+MTValidate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MTValidate.m"; sourceTree = "<group>"; };
+		BAD9F7392073210F00D24C37 /* NSString+MTFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MTFileManager.h"; sourceTree = "<group>"; };
+		BAD9F73A2073210F00D24C37 /* NSString+MTFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MTFileManager.m"; sourceTree = "<group>"; };
+		BAD9F73D207369A500D24C37 /* NSString+MTSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MTSize.h"; sourceTree = "<group>"; };
+		BAD9F73E207369A500D24C37 /* NSString+MTSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MTSize.m"; sourceTree = "<group>"; };
 		BAF4AACC2071D70400AA8934 /* NSTimer+MTExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+MTExtension.h"; sourceTree = "<group>"; };
 		BAF4AACD2071D70400AA8934 /* NSTimer+MTExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+MTExtension.m"; sourceTree = "<group>"; };
 		BAF4AACF2071DB3000AA8934 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
@@ -38,6 +48,8 @@
 		BAF4AADC207213EC00AA8934 /* UIViewController+MTExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MTExtension.m"; sourceTree = "<group>"; };
 		BAF4AADF2072163600AA8934 /* NSDate+MTExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+MTExtension.h"; sourceTree = "<group>"; };
 		BAF4AAE02072163600AA8934 /* NSDate+MTExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MTExtension.m"; sourceTree = "<group>"; };
+		BAF4AAE320723E1A00AA8934 /* UICollectionView+MTExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+MTExtension.h"; sourceTree = "<group>"; };
+		BAF4AAE420723E1A00AA8934 /* UICollectionView+MTExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+MTExtension.m"; sourceTree = "<group>"; };
 		EDC81065206CDBEA006325B4 /* iOSWheels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSWheels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC81068206CDBEB006325B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EDC81069206CDBEB006325B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -80,6 +92,26 @@
 				BAF4AAD02071DB3000AA8934 /* TestViewController.m */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		BAD9F73520731EB900D24C37 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				BAD9F73620731EE000D24C37 /* NSString+MTValidate.h */,
+				BAD9F73720731EE000D24C37 /* NSString+MTValidate.m */,
+				BAD9F7392073210F00D24C37 /* NSString+MTFileManager.h */,
+				BAD9F73A2073210F00D24C37 /* NSString+MTFileManager.m */,
+				BAD9F73D207369A500D24C37 /* NSString+MTSize.h */,
+				BAD9F73E207369A500D24C37 /* NSString+MTSize.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		BAD9F73C20735B2F00D24C37 /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CALayer;
 			sourceTree = "<group>";
 		};
 		BAF4AACB2071D6DE00AA8934 /* NSTimer */ = {
@@ -125,6 +157,15 @@
 				BAF4AAE02072163600AA8934 /* NSDate+MTExtension.m */,
 			);
 			path = NSDate;
+			sourceTree = "<group>";
+		};
+		BAF4AAE220723DF600AA8934 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				BAF4AAE320723E1A00AA8934 /* UICollectionView+MTExtension.h */,
+				BAF4AAE420723E1A00AA8934 /* UICollectionView+MTExtension.m */,
+			);
+			path = UICollectionView;
 			sourceTree = "<group>";
 		};
 		EDC8105C206CDBEA006325B4 = {
@@ -178,6 +219,9 @@
 		EDC81082206CDC31006325B4 /* Category(分类) */ = {
 			isa = PBXGroup;
 			children = (
+				BAD9F73C20735B2F00D24C37 /* CALayer */,
+				BAD9F73520731EB900D24C37 /* NSString */,
+				BAF4AAE220723DF600AA8934 /* UICollectionView */,
 				BAF4AADE2072162100AA8934 /* NSDate */,
 				BAF4AADA207213D500AA8934 /* UIViewController */,
 				BAF4AAD620720D0800AA8934 /* UINavigationController */,
@@ -298,9 +342,11 @@
 			files = (
 				BAF4AAD520720BE900AA8934 /* UIDevice+MTExtension.m in Sources */,
 				EDC81093206CDC32006325B4 /* UIView+MTExtension.m in Sources */,
+				BAD9F73B2073210F00D24C37 /* NSString+MTFileManager.m in Sources */,
 				EDC8106D206CDBEB006325B4 /* ViewController.m in Sources */,
 				BAF4AADD207213EC00AA8934 /* UIViewController+MTExtension.m in Sources */,
 				EDC8108F206CDC31006325B4 /* BaseViewController.m in Sources */,
+				BAD9F73820731EE000D24C37 /* NSString+MTValidate.m in Sources */,
 				BAF4AAD920720D2E00AA8934 /* UINavigationController+MTExtension.m in Sources */,
 				BAF4AACE2071D70400AA8934 /* NSTimer+MTExtension.m in Sources */,
 				EDC81091206CDC31006325B4 /* UIColor+MTExtension.m in Sources */,
@@ -308,7 +354,9 @@
 				BAF4AAD12071DB3000AA8934 /* TestViewController.m in Sources */,
 				EDC8106A206CDBEB006325B4 /* AppDelegate.m in Sources */,
 				BAF4AAE12072163600AA8934 /* NSDate+MTExtension.m in Sources */,
+				BAD9F73F207369A500D24C37 /* NSString+MTSize.m in Sources */,
 				EDC81090206CDC31006325B4 /* UIButton+MTColor.m in Sources */,
+				BAF4AAE520723E1A00AA8934 /* UICollectionView+MTExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
