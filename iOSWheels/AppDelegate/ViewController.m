@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "TestViewController.h"
+#import "NSDate+MTExtension.h"
 
 @interface ViewController ()
 
@@ -21,6 +22,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor orangeColor];
+    
+    
+    NSLog(@"week == %@",[[NSDate date] mt_dayFromWeekday]);
+
+
 }
 
 

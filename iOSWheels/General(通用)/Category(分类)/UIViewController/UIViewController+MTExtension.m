@@ -10,7 +10,6 @@
 
 @implementation UIViewController (MTExtension)
 
-
 /**  找到当前试图控制器 */
 + (UIViewController *)mt_currentViewController {
     
