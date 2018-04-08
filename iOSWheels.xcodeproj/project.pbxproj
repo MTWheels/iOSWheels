@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B4D61AC0A1ED42CA34B81343 /* Pods_iOSWheels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F284B8424BBD2D358D453C6 /* Pods_iOSWheels.framework */; };
 		BA2EFF9B2074CBCE00D76788 /* NSArray+MTSafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2EFF9A2074CBCE00D76788 /* NSArray+MTSafeAccess.m */; };
+		BA3B54A32079B36600C16489 /* MTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3B54A12079B36600C16489 /* MTTextView.m */; };
 		BA511DC02077C8E1000A6954 /* MTNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BA511DBF2077C8E1000A6954 /* MTNetworkCache.m */; };
 		BA511DC32077CA4F000A6954 /* MTNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BA511DC22077CA4F000A6954 /* MTNetworkHelper.m */; };
 		BAD9F73820731EE000D24C37 /* NSString+MTValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD9F73720731EE000D24C37 /* NSString+MTValidate.m */; };
@@ -40,6 +41,8 @@
 		BA2EFF992074CBCE00D76788 /* NSArray+MTSafeAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+MTSafeAccess.h"; sourceTree = "<group>"; };
 		BA2EFF9A2074CBCE00D76788 /* NSArray+MTSafeAccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MTSafeAccess.m"; sourceTree = "<group>"; };
 		BA3B549E2079AC0B00C16489 /* kInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kInterface.h; sourceTree = "<group>"; };
+		BA3B54A12079B36600C16489 /* MTTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTextView.m; sourceTree = "<group>"; };
+		BA3B54A22079B36600C16489 /* MTTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTextView.h; sourceTree = "<group>"; };
 		BA511DBE2077C8E1000A6954 /* MTNetworkCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTNetworkCache.h; sourceTree = "<group>"; };
 		BA511DBF2077C8E1000A6954 /* MTNetworkCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTNetworkCache.m; sourceTree = "<group>"; };
 		BA511DC12077CA4F000A6954 /* MTNetworkHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTNetworkHelper.h; sourceTree = "<group>"; };
@@ -113,6 +116,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BA3B549F2079B36600C16489 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA3B54A02079B36600C16489 /* UITextView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA3B54A02079B36600C16489 /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				BA3B54A12079B36600C16489 /* MTTextView.m */,
+				BA3B54A22079B36600C16489 /* MTTextView.h */,
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
 		BA511DB92077C7D3000A6954 /* Vender(第三方) */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +158,7 @@
 		BA511DBC2077C851000A6954 /* Tool(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				BA3B549F2079B36600C16489 /* View */,
 			);
 			path = "Tool(工具类)";
 			sourceTree = "<group>";
@@ -494,6 +515,7 @@
 				EDC81078206CDBEB006325B4 /* main.m in Sources */,
 				BAF4AAD12071DB3000AA8934 /* TestViewController.m in Sources */,
 				BA2EFF9B2074CBCE00D76788 /* NSArray+MTSafeAccess.m in Sources */,
+				BA3B54A32079B36600C16489 /* MTTextView.m in Sources */,
 				EDC8106A206CDBEB006325B4 /* AppDelegate.m in Sources */,
 				BA511DC32077CA4F000A6954 /* MTNetworkHelper.m in Sources */,
 				BAF4AAE12072163600AA8934 /* NSDate+MTExtension.m in Sources */,
