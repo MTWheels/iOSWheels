@@ -335,6 +335,27 @@
 
 
 
+///给定format格式化时间
+- (NSString *)mt_stringWithFormate:(NSString *)formate {
+    
+    NSDateFormatter *dateFormatter = [NSDate mt_formatter];
+    dateFormatter.dateFormat = formate;
+    return [dateFormatter stringFromDate:self];
+    
+}
+
+
+
+/**
+ *  NSDate --> 时间戳字符串
+ */
+- (NSString *)mt_timeStamp {
+    
+    NSTimeInterval timeInterval = [self timeIntervalSince1970];
+    NSString *timeString = [NSString stringWithFormat:@"%.0f",timeInterval];
+    return [timeString copy];
+    
+}
 
 
 @end

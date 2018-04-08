@@ -15,7 +15,6 @@
 + (NSDateFormatter *)mt_formatter;
 
 
-
 /**
  * 获取日、月、年、小时、分钟、秒
  */
@@ -75,6 +74,20 @@
 
 
 
+
+
+/**
+ @param formate  eg: yyyy-MM-dd HH:mm:ss
+ @return 格式化后的字符串
+ */
+- (NSString *)mt_stringWithFormate:(NSString *)formate;
+
+
+
+/**
+ *  NSDate --> 时间戳字符串
+ */
+- (NSString *)mt_timeStamp;
 
 
 @end

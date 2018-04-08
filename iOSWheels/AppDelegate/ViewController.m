@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 #import "TestViewController.h"
-#import "NSDate+MTExtension.h"
+#import "NSArray+MTSafeAccess.h"
+#import "MTNetworkHelper.h"
+
 
 @interface ViewController ()
 
@@ -23,8 +25,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor orangeColor];
     
-    
-    NSLog(@"week == %@",[[NSDate date] mt_dayFromWeekday]);
+    [MTNetworkHelper GET:@"http.baidu.com" parameters:nil responseCache:nil success:nil failure:nil];
+    [MTNetworkHelper GET:@"http.baidu.com" parameters:nil responseCache:nil success:nil failure:nil];
 
 
 }

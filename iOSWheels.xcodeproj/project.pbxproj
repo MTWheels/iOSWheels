@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4D61AC0A1ED42CA34B81343 /* Pods_iOSWheels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F284B8424BBD2D358D453C6 /* Pods_iOSWheels.framework */; };
+		BA2EFF9B2074CBCE00D76788 /* NSArray+MTSafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2EFF9A2074CBCE00D76788 /* NSArray+MTSafeAccess.m */; };
+		BA511DC02077C8E1000A6954 /* MTNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BA511DBF2077C8E1000A6954 /* MTNetworkCache.m */; };
+		BA511DC32077CA4F000A6954 /* MTNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BA511DC22077CA4F000A6954 /* MTNetworkHelper.m */; };
 		BAD9F73820731EE000D24C37 /* NSString+MTValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD9F73720731EE000D24C37 /* NSString+MTValidate.m */; };
 		BAD9F73B2073210F00D24C37 /* NSString+MTFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD9F73A2073210F00D24C37 /* NSString+MTFileManager.m */; };
 		BAD9F73F207369A500D24C37 /* NSString+MTSize.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD9F73E207369A500D24C37 /* NSString+MTSize.m */; };
@@ -30,6 +34,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F284B8424BBD2D358D453C6 /* Pods_iOSWheels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSWheels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BB1EF0AB38B5FAFCB90CA89 /* Pods-iOSWheels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSWheels.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSWheels/Pods-iOSWheels.debug.xcconfig"; sourceTree = "<group>"; };
+		A579FB1955FD2EFA5CA13943 /* Pods-iOSWheels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSWheels.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSWheels/Pods-iOSWheels.release.xcconfig"; sourceTree = "<group>"; };
+		BA2EFF992074CBCE00D76788 /* NSArray+MTSafeAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+MTSafeAccess.h"; sourceTree = "<group>"; };
+		BA2EFF9A2074CBCE00D76788 /* NSArray+MTSafeAccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MTSafeAccess.m"; sourceTree = "<group>"; };
+		BA3B549E2079AC0B00C16489 /* kInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kInterface.h; sourceTree = "<group>"; };
+		BA511DBE2077C8E1000A6954 /* MTNetworkCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTNetworkCache.h; sourceTree = "<group>"; };
+		BA511DBF2077C8E1000A6954 /* MTNetworkCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTNetworkCache.m; sourceTree = "<group>"; };
+		BA511DC12077CA4F000A6954 /* MTNetworkHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTNetworkHelper.h; sourceTree = "<group>"; };
+		BA511DC22077CA4F000A6954 /* MTNetworkHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTNetworkHelper.m; sourceTree = "<group>"; };
 		BAD9F73620731EE000D24C37 /* NSString+MTValidate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MTValidate.h"; sourceTree = "<group>"; };
 		BAD9F73720731EE000D24C37 /* NSString+MTValidate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MTValidate.m"; sourceTree = "<group>"; };
 		BAD9F7392073210F00D24C37 /* NSString+MTFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MTFileManager.h"; sourceTree = "<group>"; };
@@ -75,12 +89,70 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D61AC0A1ED42CA34B81343 /* Pods_iOSWheels.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0ACC1147A5EA21EB0811B7BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F284B8424BBD2D358D453C6 /* Pods_iOSWheels.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61C5CDF555CE8F521F410420 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BB1EF0AB38B5FAFCB90CA89 /* Pods-iOSWheels.debug.xcconfig */,
+				A579FB1955FD2EFA5CA13943 /* Pods-iOSWheels.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BA511DB92077C7D3000A6954 /* Vender(第三方) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Vender(第三方)";
+			sourceTree = "<group>";
+		};
+		BA511DBA2077C7F6000A6954 /* Resource(资源) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Resource(资源)";
+			sourceTree = "<group>";
+		};
+		BA511DBB2077C81D000A6954 /* Macros(宏) */ = {
+			isa = PBXGroup;
+			children = (
+				BA3B549E2079AC0B00C16489 /* kInterface.h */,
+			);
+			path = "Macros(宏)";
+			sourceTree = "<group>";
+		};
+		BA511DBC2077C851000A6954 /* Tool(工具类) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Tool(工具类)";
+			sourceTree = "<group>";
+		};
+		BA511DBD2077C86F000A6954 /* Network(网络) */ = {
+			isa = PBXGroup;
+			children = (
+				BA511DBE2077C8E1000A6954 /* MTNetworkCache.h */,
+				BA511DBF2077C8E1000A6954 /* MTNetworkCache.m */,
+				BA511DC12077CA4F000A6954 /* MTNetworkHelper.h */,
+				BA511DC22077CA4F000A6954 /* MTNetworkHelper.m */,
+			);
+			path = "Network(网络)";
+			sourceTree = "<group>";
+		};
 		BAD9387C206E46D6009E64AE /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +245,8 @@
 			children = (
 				EDC81067206CDBEA006325B4 /* iOSWheels */,
 				EDC81066206CDBEA006325B4 /* Products */,
+				61C5CDF555CE8F521F410420 /* Pods */,
+				0ACC1147A5EA21EB0811B7BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -189,6 +263,8 @@
 			children = (
 				BAD9387C206E46D6009E64AE /* AppDelegate */,
 				EDC8107E206CDC31006325B4 /* General(通用) */,
+				BA511DB92077C7D3000A6954 /* Vender(第三方) */,
+				BA511DBA2077C7F6000A6954 /* Resource(资源) */,
 				EDC8106E206CDBEB006325B4 /* Main.storyboard */,
 				EDC81071206CDBEB006325B4 /* Assets.xcassets */,
 				EDC81073206CDBEB006325B4 /* LaunchScreen.storyboard */,
@@ -201,8 +277,11 @@
 		EDC8107E206CDC31006325B4 /* General(通用) */ = {
 			isa = PBXGroup;
 			children = (
+				BA511DBD2077C86F000A6954 /* Network(网络) */,
 				EDC8107F206CDC31006325B4 /* Base(基础类) */,
 				EDC81082206CDC31006325B4 /* Category(分类) */,
+				BA511DBB2077C81D000A6954 /* Macros(宏) */,
+				BA511DBC2077C851000A6954 /* Tool(工具类) */,
 			);
 			path = "General(通用)";
 			sourceTree = "<group>";
@@ -256,6 +335,8 @@
 		EDC81089206CDC31006325B4 /* NSArray */ = {
 			isa = PBXGroup;
 			children = (
+				BA2EFF992074CBCE00D76788 /* NSArray+MTSafeAccess.h */,
+				BA2EFF9A2074CBCE00D76788 /* NSArray+MTSafeAccess.m */,
 			);
 			path = NSArray;
 			sourceTree = "<group>";
@@ -276,9 +357,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDC8107B206CDBEB006325B4 /* Build configuration list for PBXNativeTarget "iOSWheels" */;
 			buildPhases = (
+				7315AF69B396AEDFD6A89FFC /* [CP] Check Pods Manifest.lock */,
 				EDC81061206CDBEA006325B4 /* Sources */,
 				EDC81062206CDBEA006325B4 /* Frameworks */,
 				EDC81063206CDBEA006325B4 /* Resources */,
+				19AF6C1B6163588D09568AB3 /* [CP] Embed Pods Frameworks */,
+				D57AFEB460F97419149C7623 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -295,7 +379,7 @@
 		EDC8105D206CDBEA006325B4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "方新俊";
 				TargetAttributes = {
 					EDC81064206CDBEA006325B4 = {
@@ -335,6 +419,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19AF6C1B6163588D09568AB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOSWheels/Pods-iOSWheels-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSWheels/Pods-iOSWheels-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7315AF69B396AEDFD6A89FFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSWheels-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D57AFEB460F97419149C7623 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSWheels/Pods-iOSWheels-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EDC81061206CDBEA006325B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -342,6 +482,7 @@
 			files = (
 				BAF4AAD520720BE900AA8934 /* UIDevice+MTExtension.m in Sources */,
 				EDC81093206CDC32006325B4 /* UIView+MTExtension.m in Sources */,
+				BA511DC02077C8E1000A6954 /* MTNetworkCache.m in Sources */,
 				BAD9F73B2073210F00D24C37 /* NSString+MTFileManager.m in Sources */,
 				EDC8106D206CDBEB006325B4 /* ViewController.m in Sources */,
 				BAF4AADD207213EC00AA8934 /* UIViewController+MTExtension.m in Sources */,
@@ -352,7 +493,9 @@
 				EDC81091206CDC31006325B4 /* UIColor+MTExtension.m in Sources */,
 				EDC81078206CDBEB006325B4 /* main.m in Sources */,
 				BAF4AAD12071DB3000AA8934 /* TestViewController.m in Sources */,
+				BA2EFF9B2074CBCE00D76788 /* NSArray+MTSafeAccess.m in Sources */,
 				EDC8106A206CDBEB006325B4 /* AppDelegate.m in Sources */,
+				BA511DC32077CA4F000A6954 /* MTNetworkHelper.m in Sources */,
 				BAF4AAE12072163600AA8934 /* NSDate+MTExtension.m in Sources */,
 				BAD9F73F207369A500D24C37 /* NSString+MTSize.m in Sources */,
 				EDC81090206CDC31006325B4 /* UIButton+MTColor.m in Sources */,
@@ -396,6 +539,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -403,6 +547,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -451,6 +596,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -458,6 +604,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -488,6 +635,7 @@
 		};
 		EDC8107C206CDBEB006325B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB1EF0AB38B5FAFCB90CA89 /* Pods-iOSWheels.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -501,6 +649,7 @@
 		};
 		EDC8107D206CDBEB006325B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A579FB1955FD2EFA5CA13943 /* Pods-iOSWheels.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
