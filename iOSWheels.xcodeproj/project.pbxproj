@@ -31,6 +31,7 @@
 		EDC81090206CDC31006325B4 /* UIButton+MTColor.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC81084206CDC31006325B4 /* UIButton+MTColor.m */; };
 		EDC81091206CDC31006325B4 /* UIColor+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC81087206CDC31006325B4 /* UIColor+MTExtension.m */; };
 		EDC81093206CDC32006325B4 /* UIView+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC8108E206CDC31006325B4 /* UIView+MTExtension.m */; };
+		EDFD5E9D2074D7DE00776F66 /* MTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFD5E9B2074D7DE00776F66 /* MTTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,8 @@
 		EDC81088206CDC31006325B4 /* UIColor+MTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MTExtension.h"; sourceTree = "<group>"; };
 		EDC8108D206CDC31006325B4 /* UIView+MTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MTExtension.h"; sourceTree = "<group>"; };
 		EDC8108E206CDC31006325B4 /* UIView+MTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MTExtension.m"; sourceTree = "<group>"; };
+		EDFD5E9B2074D7DE00776F66 /* MTTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTextView.m; sourceTree = "<group>"; };
+		EDFD5E9C2074D7DE00776F66 /* MTTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTextView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				BA511DBD2077C86F000A6954 /* Network(网络) */,
+				EDFD5E982074D79500776F66 /* 工具 */,
 				EDC8107F206CDC31006325B4 /* Base(基础类) */,
 				EDC81082206CDC31006325B4 /* Category(分类) */,
 				BA511DBB2077C81D000A6954 /* Macros(宏) */,
@@ -348,6 +352,31 @@
 				EDC8108E206CDC31006325B4 /* UIView+MTExtension.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		EDFD5E982074D79500776F66 /* 工具 */ = {
+			isa = PBXGroup;
+			children = (
+				EDFD5E992074D7B200776F66 /* View */,
+			);
+			path = "工具";
+			sourceTree = "<group>";
+		};
+		EDFD5E992074D7B200776F66 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EDFD5E9A2074D7BB00776F66 /* UITextView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EDFD5E9A2074D7BB00776F66 /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				EDFD5E9C2074D7DE00776F66 /* MTTextView.h */,
+				EDFD5E9B2074D7DE00776F66 /* MTTextView.m */,
+			);
+			path = UITextView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -489,6 +518,7 @@
 				EDC8108F206CDC31006325B4 /* BaseViewController.m in Sources */,
 				BAD9F73820731EE000D24C37 /* NSString+MTValidate.m in Sources */,
 				BAF4AAD920720D2E00AA8934 /* UINavigationController+MTExtension.m in Sources */,
+				EDFD5E9D2074D7DE00776F66 /* MTTextView.m in Sources */,
 				BAF4AACE2071D70400AA8934 /* NSTimer+MTExtension.m in Sources */,
 				EDC81091206CDC31006325B4 /* UIColor+MTExtension.m in Sources */,
 				EDC81078206CDBEB006325B4 /* main.m in Sources */,
