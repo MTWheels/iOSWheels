@@ -13,6 +13,8 @@
     NSTimer *_timer;
 }
 
+@property (nonatomic, strong) UIView *redView;
+
 @end
 
 @implementation TestViewController
@@ -24,6 +26,9 @@
     _timer = [NSTimer mt_scheduledTimerWithTimeInterval:2 count:5 callback:^(NSTimer *timer) {
         NSLog(@"回调次数");
     }];
+    
+    
+    
     
 }
 
