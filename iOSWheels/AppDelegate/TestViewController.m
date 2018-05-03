@@ -8,12 +8,16 @@
 
 #import "TestViewController.h"
 #import "NSTimer+MTExtension.h"
+#import "UIButton+ChainStyle.h"
 
 @interface TestViewController (){
     NSTimer *_timer;
 }
 
 @property (nonatomic, strong) UIView *redView;
+
+/**/
+@property (nonatomic, strong) UIButton *btn;
 
 @end
 
@@ -27,9 +31,22 @@
         NSLog(@"回调次数");
     }];
     
+    [self.view addSubview:self.btn];
     
     
-    
+}
+
+
+- (UIButton *)btn {
+    if (!_btn) {
+        _btn = Button
+        .btnColor([UIColor redColor])
+        .btnTitle(@"button")
+        .btnFrame(0, 100, 100, 150)
+        .btnFont([UIFont systemFontOfSize:35])
+        .btnNormalImage(nil);
+    }
+    return _btn;
 }
 
 

@@ -20,6 +20,8 @@
 		BA511DC02077C8E1000A6954 /* MTNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BA511DBF2077C8E1000A6954 /* MTNetworkCache.m */; };
 		BA511DC32077CA4F000A6954 /* MTNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BA511DC22077CA4F000A6954 /* MTNetworkHelper.m */; };
 		BA6D8BE4208985600060C2D7 /* NSObject+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6D8BE3208985600060C2D7 /* NSObject+MTExtension.m */; };
+		BAB45733209AA1E70093106C /* UIButton+ChainStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB45732209AA1E70093106C /* UIButton+ChainStyle.m */; };
+		BAB45736209AB6160093106C /* UIView+ChainStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB45735209AB6160093106C /* UIView+ChainStyle.m */; };
 		BAD9F73820731EE000D24C37 /* NSString+MTValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD9F73720731EE000D24C37 /* NSString+MTValidate.m */; };
 		BAD9F73B2073210F00D24C37 /* NSString+MTFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD9F73A2073210F00D24C37 /* NSString+MTFileManager.m */; };
 		BAD9F73F207369A500D24C37 /* NSString+MTSize.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD9F73E207369A500D24C37 /* NSString+MTSize.m */; };
@@ -71,6 +73,11 @@
 		BA511DC22077CA4F000A6954 /* MTNetworkHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTNetworkHelper.m; sourceTree = "<group>"; };
 		BA6D8BE2208985600060C2D7 /* NSObject+MTExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MTExtension.h"; sourceTree = "<group>"; };
 		BA6D8BE3208985600060C2D7 /* NSObject+MTExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MTExtension.m"; sourceTree = "<group>"; };
+		BAB45731209AA1E70093106C /* UIButton+ChainStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ChainStyle.h"; sourceTree = "<group>"; };
+		BAB45732209AA1E70093106C /* UIButton+ChainStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ChainStyle.m"; sourceTree = "<group>"; };
+		BAB45734209AB6160093106C /* UIView+ChainStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ChainStyle.h"; sourceTree = "<group>"; };
+		BAB45735209AB6160093106C /* UIView+ChainStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ChainStyle.m"; sourceTree = "<group>"; };
+		BAB45737209ADE540093106C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		BAD9F73620731EE000D24C37 /* NSString+MTValidate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MTValidate.h"; sourceTree = "<group>"; };
 		BAD9F73720731EE000D24C37 /* NSString+MTValidate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MTValidate.m"; sourceTree = "<group>"; };
 		BAD9F7392073210F00D24C37 /* NSString+MTFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MTFileManager.h"; sourceTree = "<group>"; };
@@ -345,6 +352,7 @@
 				EDC81073206CDBEB006325B4 /* LaunchScreen.storyboard */,
 				EDC81076206CDBEB006325B4 /* Info.plist */,
 				EDC81077206CDBEB006325B4 /* main.m */,
+				BAB45737209ADE540093106C /* PrefixHeader.pch */,
 			);
 			path = iOSWheels;
 			sourceTree = "<group>";
@@ -394,6 +402,8 @@
 		EDC81083206CDC31006325B4 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
+				BAB45731209AA1E70093106C /* UIButton+ChainStyle.h */,
+				BAB45732209AA1E70093106C /* UIButton+ChainStyle.m */,
 				EDC81085206CDC31006325B4 /* UIButton+MTColor.h */,
 				EDC81084206CDC31006325B4 /* UIButton+MTColor.m */,
 			);
@@ -423,6 +433,8 @@
 			children = (
 				EDC8108D206CDC31006325B4 /* UIView+MTExtension.h */,
 				EDC8108E206CDC31006325B4 /* UIView+MTExtension.m */,
+				BAB45734209AB6160093106C /* UIView+ChainStyle.h */,
+				BAB45735209AB6160093106C /* UIView+ChainStyle.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -506,6 +518,8 @@
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/SafeObject/SafeObject.framework",
 				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
 				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
@@ -515,6 +529,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SafeObject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
@@ -564,9 +580,11 @@
 				BAF4AACE2071D70400AA8934 /* NSTimer+MTExtension.m in Sources */,
 				EDC81091206CDC31006325B4 /* UIColor+MTExtension.m in Sources */,
 				EDC81078206CDBEB006325B4 /* main.m in Sources */,
+				BAB45733209AA1E70093106C /* UIButton+ChainStyle.m in Sources */,
 				BAF4AAD12071DB3000AA8934 /* TestViewController.m in Sources */,
 				BA6D8BE4208985600060C2D7 /* NSObject+MTExtension.m in Sources */,
 				BA3B54AA2079EAAA00C16489 /* NSObject+MTModel.m in Sources */,
+				BAB45736209AB6160093106C /* UIView+ChainStyle.m in Sources */,
 				BA2EFF9B2074CBCE00D76788 /* NSArray+MTSafeAccess.m in Sources */,
 				BA3B54A32079B36600C16489 /* MTTextView.m in Sources */,
 				EDC8106A206CDBEB006325B4 /* AppDelegate.m in Sources */,
@@ -717,6 +735,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSWheels/PrefixHeader.pch";
 				INFOPLIST_FILE = iOSWheels/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Promecn.iOSWheels;
@@ -731,6 +750,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSWheels/PrefixHeader.pch";
 				INFOPLIST_FILE = iOSWheels/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Promecn.iOSWheels;

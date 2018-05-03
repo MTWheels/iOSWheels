@@ -9,7 +9,7 @@
 #import "MTDBHelper.h"
 #import "NSString+MTFileManager.h"
 #import "MTDBUtils.h"
-#import <MJExtension/MJExtension.h>
+#import "MJExtension/MJExtension.h"
 
 /**默认数据库名称*/
 #define SQLITE_NAME @"MTFMDB.db"
