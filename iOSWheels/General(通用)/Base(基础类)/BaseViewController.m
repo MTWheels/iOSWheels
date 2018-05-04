@@ -14,9 +14,37 @@
 
 @implementation BaseViewController
 
+
++ (instancetype)allocWithZone:(struct _NSZone *)zone {
+    BaseViewController *viewController = [super allocWithZone:zone];
+    
+    @weakify(viewController)
+    [[viewController rac_signalForSelector:@selector(viewDidLoad)] subscribeNext:^(id x) {
+        @strongify(viewController)
+        [viewController mt_addSubviews];
+        [viewController mt_bindViewModel];
+    }];
+    
+    return viewController;
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
+
+
+
+#pragma mark - RAC
+/**
+ *  添加控件
+ */
+- (void)mt_addSubviews {}
+
+/**
+ *  绑定
+ */
+- (void)mt_bindViewModel {}
 
 
 

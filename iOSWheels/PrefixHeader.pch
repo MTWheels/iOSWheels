@@ -14,11 +14,17 @@
 
 #import "ReactiveCocoa/ReactiveCocoa.h"
 #import "Masonry/Masonry.h"
+#import "MJExtension/MJExtension.h"
+#import "SafeObject.h"
 
-
+//网络请求类
+#import "MTNetworkHelper.h"
 
 //链式调用
 #import "UIButton+ChainStyle.h"
+
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
 
 

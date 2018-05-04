@@ -7,7 +7,7 @@
 //
 
 #import "MTNetworkHelper.h"
-#import <AFNetworking/AFNetworking.h>
+#import "AFNetworking/AFNetworking.h"
 #import "NSDate+MTExtension.h"
 #import "NSString+MTFileManager.h"
 
@@ -397,7 +397,7 @@ static AFHTTPSessionManager *_sessionManager;
 + (void)setSecurityPolicyWithCerPath:(NSString *)cerPath validatesDomainName:(BOOL)validatesDomainName {
     NSData *cerData = [NSData dataWithContentsOfFile:cerPath];
     // 使用证书验证模式
-    AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate];
+    AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
     // 如果需要验证自建证书(无效证书)，需要设置为YES
     securityPolicy.allowInvalidCertificates = YES;
     // 是否需要验证域名，默认为YES;

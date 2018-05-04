@@ -22,6 +22,15 @@
 		BA6D8BE4208985600060C2D7 /* NSObject+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6D8BE3208985600060C2D7 /* NSObject+MTExtension.m */; };
 		BAB45733209AA1E70093106C /* UIButton+ChainStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB45732209AA1E70093106C /* UIButton+ChainStyle.m */; };
 		BAB45736209AB6160093106C /* UIView+ChainStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB45735209AB6160093106C /* UIView+ChainStyle.m */; };
+		BAB4573E209AF0330093106C /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB4573D209AF0330093106C /* BaseNavigationController.m */; };
+		BAB45741209AF0530093106C /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB45740209AF0530093106C /* BaseTabBarController.m */; };
+		BAB45748209AF2A90093106C /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB45747209AF2A90093106C /* BaseViewModel.m */; };
+		BAB4574F209AF60C0093106C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB4574E209AF60C0093106C /* HomeViewController.m */; };
+		BAB45752209AF6160093106C /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB45751209AF6160093106C /* MineViewController.m */; };
+		BAB4575D209AF9960093106C /* HomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB4575C209AF9960093106C /* HomeViewModel.m */; };
+		BAB45760209AFCBD0093106C /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB4575F209AFCBD0093106C /* BaseView.m */; };
+		BAB45763209AFED00093106C /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB45762209AFED00093106C /* HomeView.m */; };
+		BAB45765209B065F0093106C /* Debug101_200_75_215.cer in Resources */ = {isa = PBXBuildFile; fileRef = BAB45764209B065F0093106C /* Debug101_200_75_215.cer */; };
 		BAD9F73820731EE000D24C37 /* NSString+MTValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD9F73720731EE000D24C37 /* NSString+MTValidate.m */; };
 		BAD9F73B2073210F00D24C37 /* NSString+MTFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD9F73A2073210F00D24C37 /* NSString+MTFileManager.m */; };
 		BAD9F73F207369A500D24C37 /* NSString+MTSize.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD9F73E207369A500D24C37 /* NSString+MTSize.m */; };
@@ -78,6 +87,24 @@
 		BAB45734209AB6160093106C /* UIView+ChainStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ChainStyle.h"; sourceTree = "<group>"; };
 		BAB45735209AB6160093106C /* UIView+ChainStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ChainStyle.m"; sourceTree = "<group>"; };
 		BAB45737209ADE540093106C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		BAB45738209AEABE0093106C /* BaseViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewControllerProtocol.h; sourceTree = "<group>"; };
+		BAB4573C209AF0330093106C /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		BAB4573D209AF0330093106C /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		BAB4573F209AF0530093106C /* BaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		BAB45740209AF0530093106C /* BaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		BAB45746209AF2A90093106C /* BaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
+		BAB45747209AF2A90093106C /* BaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		BAB4574D209AF60C0093106C /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		BAB4574E209AF60C0093106C /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		BAB45750209AF6160093106C /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		BAB45751209AF6160093106C /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		BAB4575B209AF9960093106C /* HomeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewModel.h; sourceTree = "<group>"; };
+		BAB4575C209AF9960093106C /* HomeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewModel.m; sourceTree = "<group>"; };
+		BAB4575E209AFCBD0093106C /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		BAB4575F209AFCBD0093106C /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		BAB45761209AFED00093106C /* HomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
+		BAB45762209AFED00093106C /* HomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
+		BAB45764209B065F0093106C /* Debug101_200_75_215.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = Debug101_200_75_215.cer; sourceTree = "<group>"; };
 		BAD9F73620731EE000D24C37 /* NSString+MTValidate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MTValidate.h"; sourceTree = "<group>"; };
 		BAD9F73720731EE000D24C37 /* NSString+MTValidate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MTValidate.m"; sourceTree = "<group>"; };
 		BAD9F7392073210F00D24C37 /* NSString+MTFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MTFileManager.h"; sourceTree = "<group>"; };
@@ -231,6 +258,69 @@
 			path = NSObject;
 			sourceTree = "<group>";
 		};
+		BAB4574A209AF5AA0093106C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BAB4574C209AF5E80093106C /* Mine(我的) */,
+				BAB4574B209AF5C80093106C /* Home(首页) */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BAB4574B209AF5C80093106C /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				BAB45757209AF9330093106C /* Model */,
+				BAB45756209AF92D0093106C /* View */,
+				BAB45755209AF9140093106C /* Controllers */,
+				BAB45753209AF8FB0093106C /* ViewModel */,
+				BAB4574D209AF60C0093106C /* HomeViewController.h */,
+				BAB4574E209AF60C0093106C /* HomeViewController.m */,
+			);
+			path = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		BAB4574C209AF5E80093106C /* Mine(我的) */ = {
+			isa = PBXGroup;
+			children = (
+				BAB45750209AF6160093106C /* MineViewController.h */,
+				BAB45751209AF6160093106C /* MineViewController.m */,
+			);
+			path = "Mine(我的)";
+			sourceTree = "<group>";
+		};
+		BAB45753209AF8FB0093106C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BAB4575B209AF9960093106C /* HomeViewModel.h */,
+				BAB4575C209AF9960093106C /* HomeViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BAB45755209AF9140093106C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BAB45756209AF92D0093106C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BAB45761209AFED00093106C /* HomeView.h */,
+				BAB45762209AFED00093106C /* HomeView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BAB45757209AF9330093106C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BAD9387C206E46D6009E64AE /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -344,6 +434,7 @@
 			isa = PBXGroup;
 			children = (
 				BAD9387C206E46D6009E64AE /* AppDelegate */,
+				BAB4574A209AF5AA0093106C /* Controllers */,
 				EDC8107E206CDC31006325B4 /* General(通用) */,
 				BA511DB92077C7D3000A6954 /* Vender(第三方) */,
 				BA511DBA2077C7F6000A6954 /* Resource(资源) */,
@@ -353,6 +444,7 @@
 				EDC81076206CDBEB006325B4 /* Info.plist */,
 				EDC81077206CDBEB006325B4 /* main.m */,
 				BAB45737209ADE540093106C /* PrefixHeader.pch */,
+				BAB45764209B065F0093106C /* Debug101_200_75_215.cer */,
 			);
 			path = iOSWheels;
 			sourceTree = "<group>";
@@ -375,6 +467,15 @@
 			children = (
 				EDC81081206CDC31006325B4 /* BaseViewController.h */,
 				EDC81080206CDC31006325B4 /* BaseViewController.m */,
+				BAB45738209AEABE0093106C /* BaseViewControllerProtocol.h */,
+				BAB4573C209AF0330093106C /* BaseNavigationController.h */,
+				BAB4573D209AF0330093106C /* BaseNavigationController.m */,
+				BAB4573F209AF0530093106C /* BaseTabBarController.h */,
+				BAB45740209AF0530093106C /* BaseTabBarController.m */,
+				BAB45746209AF2A90093106C /* BaseViewModel.h */,
+				BAB45747209AF2A90093106C /* BaseViewModel.m */,
+				BAB4575E209AFCBD0093106C /* BaseView.h */,
+				BAB4575F209AFCBD0093106C /* BaseView.m */,
 			);
 			path = "Base(基础类)";
 			sourceTree = "<group>";
@@ -502,6 +603,7 @@
 				EDC81075206CDBEB006325B4 /* LaunchScreen.storyboard in Resources */,
 				EDC81072206CDBEB006325B4 /* Assets.xcassets in Resources */,
 				EDC81070206CDBEB006325B4 /* Main.storyboard in Resources */,
+				BAB45765209B065F0093106C /* Debug101_200_75_215.cer in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +671,8 @@
 				EDC81093206CDC32006325B4 /* UIView+MTExtension.m in Sources */,
 				BA3B54AD2079F42B00C16489 /* MTDBUtils.m in Sources */,
 				BA511DC02077C8E1000A6954 /* MTNetworkCache.m in Sources */,
+				BAB4573E209AF0330093106C /* BaseNavigationController.m in Sources */,
+				BAB45752209AF6160093106C /* MineViewController.m in Sources */,
 				BAD9F73B2073210F00D24C37 /* NSString+MTFileManager.m in Sources */,
 				EDC8106D206CDBEB006325B4 /* ViewController.m in Sources */,
 				BAF4AADD207213EC00AA8934 /* UIViewController+MTExtension.m in Sources */,
@@ -583,17 +687,23 @@
 				BAB45733209AA1E70093106C /* UIButton+ChainStyle.m in Sources */,
 				BAF4AAD12071DB3000AA8934 /* TestViewController.m in Sources */,
 				BA6D8BE4208985600060C2D7 /* NSObject+MTExtension.m in Sources */,
+				BAB45741209AF0530093106C /* BaseTabBarController.m in Sources */,
 				BA3B54AA2079EAAA00C16489 /* NSObject+MTModel.m in Sources */,
 				BAB45736209AB6160093106C /* UIView+ChainStyle.m in Sources */,
+				BAB4574F209AF60C0093106C /* HomeViewController.m in Sources */,
 				BA2EFF9B2074CBCE00D76788 /* NSArray+MTSafeAccess.m in Sources */,
 				BA3B54A32079B36600C16489 /* MTTextView.m in Sources */,
 				EDC8106A206CDBEB006325B4 /* AppDelegate.m in Sources */,
 				BA511DC32077CA4F000A6954 /* MTNetworkHelper.m in Sources */,
 				BAF4AAE12072163600AA8934 /* NSDate+MTExtension.m in Sources */,
 				BAD9F73F207369A500D24C37 /* NSString+MTSize.m in Sources */,
+				BAB45748209AF2A90093106C /* BaseViewModel.m in Sources */,
 				BA3B54B3207A0AA500C16489 /* Person.m in Sources */,
 				EDC81090206CDC31006325B4 /* UIButton+MTColor.m in Sources */,
+				BAB45763209AFED00093106C /* HomeView.m in Sources */,
 				BA3B54B9207A143200C16489 /* MTFoundation.m in Sources */,
+				BAB4575D209AF9960093106C /* HomeViewModel.m in Sources */,
+				BAB45760209AFCBD0093106C /* BaseView.m in Sources */,
 				BA3B54A72079E2F800C16489 /* MTDBHelper.m in Sources */,
 				BAF4AAE520723E1A00AA8934 /* UICollectionView+MTExtension.m in Sources */,
 			);
