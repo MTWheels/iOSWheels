@@ -103,4 +103,14 @@
     return nil;
 }
 
+
+
+
+/**
+ * xib创建的view
+ */
++ (instancetype)mt_viewFromXib {
+    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] lastObject];
+}
+
 @end

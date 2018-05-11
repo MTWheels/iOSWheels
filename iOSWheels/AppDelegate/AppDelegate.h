@@ -12,6 +12,8 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+/// 获取AppDelegate
++ (AppDelegate *)sharedDelegate;
 
 @end
 

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "MTNetworkCache.h"
+#import "MTHTTPResponse.h"
 
 
 typedef NS_ENUM(NSUInteger, MTNetworkStatusType) {
@@ -269,6 +270,20 @@ typedef void(^MTNetworkStatus)(MTNetworkStatusType status);
 
 
 
+
+
+
+
+
+
+
+#pragma mark -------- RAC 网络请求扩展 ------
+
+
++ (RACSignal *)rac_POST:(NSString *)path parameters:(id)parameters;
+
+
++ (RACSignal *)rac_GET:(NSString *)path parameters:(id)parameters;
 
 
 

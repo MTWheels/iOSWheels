@@ -125,7 +125,7 @@
  同步查询所有结果.   返回对象数组  conditions = nil  表示查询所有数据
  @conditions 条件语句.例如:@"where name = '标哥' or name = '小马哥' and age = 26 order by age desc limit 6" 即查询name等于标哥或小马哥和age等于26的数据通过age降序输出,只查询前面6条.
  */
-+ (NSArray *)mt_queryWithConditions:(NSString* _Nullable)conditions;
++ (NSArray *_Nonnull)mt_queryWithConditions:(NSString* _Nullable)conditions;
 ///异步查询所有数据， 返回对象数组
 + (void)mt_queryWithConditionsAsync:(NSString* _Nullable)conditions
                            complete:(void(^_Nullable)(BOOL isSuccess))complete;

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "76902DF669AEF5FDAE0AC4B81CCF9B41"
+               BlueprintIdentifier = "B9E9F185C3DADD35E75CC38569BC5CCD"
                BuildableName = "Pods_iOSWheels.framework"
                BlueprintName = "Pods-iOSWheels"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "76902DF669AEF5FDAE0AC4B81CCF9B41"
+            BlueprintIdentifier = "B9E9F185C3DADD35E75CC38569BC5CCD"
             BuildableName = "Pods_iOSWheels.framework"
             BlueprintName = "Pods-iOSWheels"
             ReferencedContainer = "container:Pods.xcodeproj">

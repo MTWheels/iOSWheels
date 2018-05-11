@@ -16,7 +16,10 @@
 @property (nonatomic, strong) NSMutableArray *dataArray;
 
 
-//绑定rac
+
+///实例化时绑定RAC
 - (void)mt_bindRAC;
+
+
 
 @end

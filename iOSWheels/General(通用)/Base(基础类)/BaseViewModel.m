@@ -21,8 +21,13 @@
 }
 
 
-
+///实例化时绑定RAC
 - (void)mt_bindRAC {}
+
+
+
+
+
 
 
 
@@ -33,6 +38,10 @@
     }
     return _dataArray;
 }
+
+
+
+
 
 
 @end

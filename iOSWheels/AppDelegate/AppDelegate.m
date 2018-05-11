@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "BaseTabBarController.h"
 
+
+
 @interface AppDelegate ()
 
 @end
@@ -23,36 +25,35 @@
     self.window.rootViewController = [[BaseTabBarController alloc] init];
     [self.window makeKeyAndVisible];
     
-    NSString *cerPath = [[NSBundle mainBundle] pathForResource:@"Debug101_200_75_215" ofType:@"cer"];
-    [MTNetworkHelper setSecurityPolicyWithCerPath:cerPath validatesDomainName:NO];
-    
+
     return YES;
 }
 
 
-- (void)applicationWillResignActive:(UIApplication *)application {
 
+
+
+
+
+#pragma mark- 获取appDelegate
++ (AppDelegate *)sharedDelegate{
+    return (AppDelegate *)[[UIApplication sharedApplication] delegate];
 }
 
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    
-}
+- (void)applicationWillResignActive:(UIApplication *)application {}
 
 
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-
-}
+- (void)applicationDidEnterBackground:(UIApplication *)application {}
 
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    
-}
+- (void)applicationWillEnterForeground:(UIApplication *)application {}
 
 
-- (void)applicationWillTerminate:(UIApplication *)application {
-    
-}
+- (void)applicationDidBecomeActive:(UIApplication *)application {}
+
+
+- (void)applicationWillTerminate:(UIApplication *)application {}
 
 
 @end

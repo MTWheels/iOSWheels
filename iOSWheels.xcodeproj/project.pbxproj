@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B4D61AC0A1ED42CA34B81343 /* Pods_iOSWheels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F284B8424BBD2D358D453C6 /* Pods_iOSWheels.framework */; };
+		BA0ED844209DEFE4001C0555 /* MTHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0ED843209DEFE4001C0555 /* MTHTTPResponse.m */; };
 		BA2EFF9B2074CBCE00D76788 /* NSArray+MTSafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2EFF9A2074CBCE00D76788 /* NSArray+MTSafeAccess.m */; };
 		BA3B54A32079B36600C16489 /* MTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3B54A12079B36600C16489 /* MTTextView.m */; };
 		BA3B54A72079E2F800C16489 /* MTDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3B54A62079E2F800C16489 /* MTDBHelper.m */; };
@@ -31,6 +32,8 @@
 		BAB45760209AFCBD0093106C /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB4575F209AFCBD0093106C /* BaseView.m */; };
 		BAB45763209AFED00093106C /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB45762209AFED00093106C /* HomeView.m */; };
 		BAB45765209B065F0093106C /* Debug101_200_75_215.cer in Resources */ = {isa = PBXBuildFile; fileRef = BAB45764209B065F0093106C /* Debug101_200_75_215.cer */; };
+		BACD6BA7209C67B600DFDB90 /* UITextField+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BACD6BA6209C67B600DFDB90 /* UITextField+MTExtension.m */; };
+		BACD6BAB209C6A2900DFDB90 /* UITextView+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BACD6BAA209C6A2900DFDB90 /* UITextView+MTExtension.m */; };
 		BAD9F73820731EE000D24C37 /* NSString+MTValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD9F73720731EE000D24C37 /* NSString+MTValidate.m */; };
 		BAD9F73B2073210F00D24C37 /* NSString+MTFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD9F73A2073210F00D24C37 /* NSString+MTFileManager.m */; };
 		BAD9F73F207369A500D24C37 /* NSString+MTSize.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD9F73E207369A500D24C37 /* NSString+MTSize.m */; };
@@ -58,6 +61,9 @@
 		2F284B8424BBD2D358D453C6 /* Pods_iOSWheels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSWheels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB1EF0AB38B5FAFCB90CA89 /* Pods-iOSWheels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSWheels.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSWheels/Pods-iOSWheels.debug.xcconfig"; sourceTree = "<group>"; };
 		A579FB1955FD2EFA5CA13943 /* Pods-iOSWheels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSWheels.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSWheels/Pods-iOSWheels.release.xcconfig"; sourceTree = "<group>"; };
+		BA0ED833209D4448001C0555 /* MHSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHSingleton.h; sourceTree = "<group>"; };
+		BA0ED842209DEFE4001C0555 /* MTHTTPResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTHTTPResponse.h; sourceTree = "<group>"; };
+		BA0ED843209DEFE4001C0555 /* MTHTTPResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTHTTPResponse.m; sourceTree = "<group>"; };
 		BA2EFF992074CBCE00D76788 /* NSArray+MTSafeAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+MTSafeAccess.h"; sourceTree = "<group>"; };
 		BA2EFF9A2074CBCE00D76788 /* NSArray+MTSafeAccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MTSafeAccess.m"; sourceTree = "<group>"; };
 		BA3B549E2079AC0B00C16489 /* kInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kInterface.h; sourceTree = "<group>"; };
@@ -81,6 +87,7 @@
 		BA511DBF2077C8E1000A6954 /* MTNetworkCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTNetworkCache.m; sourceTree = "<group>"; };
 		BA511DC12077CA4F000A6954 /* MTNetworkHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTNetworkHelper.h; sourceTree = "<group>"; };
 		BA511DC22077CA4F000A6954 /* MTNetworkHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTNetworkHelper.m; sourceTree = "<group>"; };
+		BA69174A20A2D041008BFCBA /* NetWorkHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkHeader.h; sourceTree = "<group>"; };
 		BA6D8BE2208985600060C2D7 /* NSObject+MTExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MTExtension.h"; sourceTree = "<group>"; };
 		BA6D8BE3208985600060C2D7 /* NSObject+MTExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MTExtension.m"; sourceTree = "<group>"; };
 		BAB45731209AA1E70093106C /* UIButton+ChainStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ChainStyle.h"; sourceTree = "<group>"; };
@@ -106,6 +113,11 @@
 		BAB45761209AFED00093106C /* HomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
 		BAB45762209AFED00093106C /* HomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
 		BAB45764209B065F0093106C /* Debug101_200_75_215.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = Debug101_200_75_215.cer; sourceTree = "<group>"; };
+		BAC68D2E209FFD52006859E9 /* kConstEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kConstEnum.h; sourceTree = "<group>"; };
+		BACD6BA5209C67B600DFDB90 /* UITextField+MTExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+MTExtension.h"; sourceTree = "<group>"; };
+		BACD6BA6209C67B600DFDB90 /* UITextField+MTExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+MTExtension.m"; sourceTree = "<group>"; };
+		BACD6BA9209C6A2900DFDB90 /* UITextView+MTExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+MTExtension.h"; sourceTree = "<group>"; };
+		BACD6BAA209C6A2900DFDB90 /* UITextView+MTExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+MTExtension.m"; sourceTree = "<group>"; };
 		BAD9F73620731EE000D24C37 /* NSString+MTValidate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MTValidate.h"; sourceTree = "<group>"; };
 		BAD9F73720731EE000D24C37 /* NSString+MTValidate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MTValidate.m"; sourceTree = "<group>"; };
 		BAD9F7392073210F00D24C37 /* NSString+MTFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MTFileManager.h"; sourceTree = "<group>"; };
@@ -177,6 +189,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BA0ED832209D4438001C0555 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				BA0ED833209D4448001C0555 /* MHSingleton.h */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
 		BA3B549F2079B36600C16489 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +249,8 @@
 			isa = PBXGroup;
 			children = (
 				BA3B549E2079AC0B00C16489 /* kInterface.h */,
+				BAC68D2E209FFD52006859E9 /* kConstEnum.h */,
+				BA69174A20A2D041008BFCBA /* NetWorkHeader.h */,
 			);
 			path = "Macros(宏)";
 			sourceTree = "<group>";
@@ -236,6 +258,7 @@
 		BA511DBC2077C851000A6954 /* Tool(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				BA0ED832209D4438001C0555 /* Singleton */,
 				BA3B549F2079B36600C16489 /* View */,
 			);
 			path = "Tool(工具类)";
@@ -248,6 +271,8 @@
 				BA511DBF2077C8E1000A6954 /* MTNetworkCache.m */,
 				BA511DC12077CA4F000A6954 /* MTNetworkHelper.h */,
 				BA511DC22077CA4F000A6954 /* MTNetworkHelper.m */,
+				BA0ED842209DEFE4001C0555 /* MTHTTPResponse.h */,
+				BA0ED843209DEFE4001C0555 /* MTHTTPResponse.m */,
 			);
 			path = "Network(网络)";
 			sourceTree = "<group>";
@@ -322,6 +347,24 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BACD6BA4209C677700DFDB90 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				BACD6BA5209C67B600DFDB90 /* UITextField+MTExtension.h */,
+				BACD6BA6209C67B600DFDB90 /* UITextField+MTExtension.m */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		BACD6BA8209C6A0800DFDB90 /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				BACD6BA9209C6A2900DFDB90 /* UITextView+MTExtension.h */,
+				BACD6BAA209C6A2900DFDB90 /* UITextView+MTExtension.m */,
+			);
+			path = UITextView;
 			sourceTree = "<group>";
 		};
 		BAD9387C206E46D6009E64AE /* AppDelegate */ = {
@@ -495,6 +538,8 @@
 		EDC81082206CDC31006325B4 /* Category(分类) */ = {
 			isa = PBXGroup;
 			children = (
+				BACD6BA8209C6A0800DFDB90 /* UITextView */,
+				BACD6BA4209C677700DFDB90 /* UITextField */,
 				ED3D6109209C31A900D4DFF0 /* UIScrollView */,
 				BA6D8BE1208984D40060C2D7 /* NSObject */,
 				BAD9F73C20735B2F00D24C37 /* CALayer */,
@@ -631,8 +676,11 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOSWheels/Pods-iOSWheels-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework",
 				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/MLeaksFinder/MLeaksFinder.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/SafeObject/SafeObject.framework",
@@ -642,8 +690,11 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBRetainCycleDetector.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLeaksFinder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SafeObject.framework",
@@ -680,6 +731,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BACD6BAB209C6A2900DFDB90 /* UITextView+MTExtension.m in Sources */,
 				BAF4AAD520720BE900AA8934 /* UIDevice+MTExtension.m in Sources */,
 				EDC81093206CDC32006325B4 /* UIView+MTExtension.m in Sources */,
 				BA3B54AD2079F42B00C16489 /* MTDBUtils.m in Sources */,
@@ -708,6 +760,8 @@
 				BA2EFF9B2074CBCE00D76788 /* NSArray+MTSafeAccess.m in Sources */,
 				BA3B54A32079B36600C16489 /* MTTextView.m in Sources */,
 				EDC8106A206CDBEB006325B4 /* AppDelegate.m in Sources */,
+				BA0ED844209DEFE4001C0555 /* MTHTTPResponse.m in Sources */,
+				BACD6BA7209C67B600DFDB90 /* UITextField+MTExtension.m in Sources */,
 				BA511DC32077CA4F000A6954 /* MTNetworkHelper.m in Sources */,
 				BAF4AAE12072163600AA8934 /* NSDate+MTExtension.m in Sources */,
 				BAD9F73F207369A500D24C37 /* NSString+MTSize.m in Sources */,

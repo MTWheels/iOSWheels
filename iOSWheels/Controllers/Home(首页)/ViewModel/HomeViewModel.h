@@ -10,6 +10,7 @@
 
 @interface HomeViewModel : BaseViewModel
 
+
 //刷新数据
 @property (nonatomic, strong) RACCommand *refreshDataCommand;
 //加载更多

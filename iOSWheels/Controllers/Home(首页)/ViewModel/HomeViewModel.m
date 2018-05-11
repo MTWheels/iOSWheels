@@ -10,10 +10,17 @@
 
 @implementation HomeViewModel
 
+
+
+
 - (void)mt_bindRAC {
     //订阅成功数据
-    [self.refreshDataCommand.executionSignals.switchToLatest subscribeNext:^(id x) {
-        NSLog(@"success == %@",x);
+  
+    [[self.refreshDataCommand.executionSignals.switchToLatest doNext:^(id x) {
+        NSLog(@"don.................");
+    }] subscribeNext:^(MTHTTPResponse *result) {
+        NSLog(@"refreshDataCommand == %@",result);
+
     }];
     
     //加载数据网络请求失败
@@ -23,18 +30,19 @@
     
     
     //订阅加载更多数据
-    [self.nextPageCommand.executionSignals.switchToLatest subscribeNext:^(id x) {
-        
+    [self.nextPageCommand.executionSignals.switchToLatest subscribeNext:^(MTHTTPResponse *result) {
+        NSLog(@"nextPageCommand == %@",result);
+
     }];
     
     
     //加载更多网络请求失败
     [self.nextPageCommand.executionSignals.switchToLatest subscribeError:^(NSError *error) {
-        
+        NSLog(@"nexterror == %@",error);
+
     }];
     
-    //异步执行
-    [self.refreshDataCommand execute:nil];
+
 
     
 }
@@ -48,22 +56,11 @@
     if (!_refreshDataCommand) {
         @weakify(self)
         _refreshDataCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
-          @strongify(self)
-            return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-                @strongify(self)
-                self.currentPage = 1;
-                [MTNetworkHelper POST:@"https://101.200.75.215:90/api/banner/api_get_front_banner_info_list/index" parameters:@{@"login_user_id":@"1258",@"category_id":@(2),@"page":@(self.currentPage)} success:^(id responseObject) {
-                    
-                    [subscriber sendNext:responseObject];
-                    [subscriber sendCompleted];
-                    
-                } failure:^(NSError *error) {
-                    [subscriber sendError:error];
-                    [subscriber sendCompleted];
-                }];
-                
-                return nil;
-            }];
+            @strongify(self)
+            self.currentPage = 1;
+            NSString *urlPath = RequestWebsite(@"api/banner/api_get_front_banner_info_list/index");
+            NSDictionary *dict = @{@"login_user_id":@"1258",@"category_id":@(2),@"page":@(self.currentPage)};
+            return [MTNetworkHelper rac_POST:urlPath parameters:dict];
             
         }];
     }
@@ -77,23 +74,11 @@
         @weakify(self)
         _nextPageCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
             @strongify(self)
-            return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-                @strongify(self)
-                self.currentPage ++;
-                [MTNetworkHelper POST:@"https://101.200.75.215:90/api/banner/api_get_front_banner_info_list/index" parameters:@{@"login_user_id":@"1258",@"category_id":@(2),@"page":@(self.currentPage)} success:^(id responseObject) {
-                    
-                    [subscriber sendNext:responseObject];
-                    [subscriber sendCompleted];
-                    
-                } failure:^(NSError *error) {
-                    @strongify(self);
-                    self.currentPage --;
-                    [subscriber sendError:error];
-                    [subscriber sendCompleted];
-                }];
-                
-                return nil;
-            }];
+            
+            self.currentPage ++;
+            NSString *urlPath = RequestWebsite(@"api/banner/api_get_front_banner_info_list/index");
+            NSDictionary *dict = @{@"login_user_id":@"1258",@"category_id":@(2),@"page":@(self.currentPage)};
+            return [MTNetworkHelper rac_POST:urlPath parameters:dict];
             
         }];
     }

@@ -10,12 +10,15 @@
 #import "HomeViewModel.h"
 #import "HomeView.h"
 
+
+
 @interface HomeViewController ()
 
 /*ViewModel*/
 @property (nonatomic, strong) HomeViewModel *viewModel;
 /*homeView*/
 @property (nonatomic, strong) HomeView *homeView;
+
 
 @end
 
@@ -24,6 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+   
 }
 
 

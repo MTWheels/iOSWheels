@@ -10,28 +10,57 @@
 
 @interface BaseNavigationController ()
 
+/// 导航栏分隔线
+@property (nonatomic , weak , readwrite) UIImageView * navigationBottomLine;
+
 @end
 
 @implementation BaseNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self _setup];
 }
+
+
+#pragma mark - 初始化
+- (void) _setup
+{
+    [self _setupNavigationBarBottomLine];
+}
+
+// 查询最后一条数据
+- (UIImageView *)_findHairlineImageViewUnder:(UIView *)view{
+    if ([view isKindOfClass:UIImageView.class] && view.bounds.size.height <= 1.0) {
+        return (UIImageView *)view;
+    }
+    for (UIView *subview in view.subviews){
+        UIImageView *imageView = [self _findHairlineImageViewUnder:subview];
+        if (imageView){ return imageView; }
+    }
+    return nil;
+}
+
+#pragma mark - 设置导航栏的分割线
+- (void)_setupNavigationBarBottomLine{
+    //!!!:这里之前设置系统的 navigationBarBottomLine.image = xxx;无效 Why？ 隐藏了系统的 自己添加了一个分割线
+    // 隐藏系统的导航栏分割线
+    UIImageView *navigationBarBottomLine = [self _findHairlineImageViewUnder:self.navigationBar];
+    navigationBarBottomLine.hidden = YES;
+//    // 添加自己的分割线
+//    CGFloat navSystemLineH = .5f;
+//    UIImageView *navSystemLine = [[UIImageView alloc] initWithFrame:CGRectMake(0, self.navigationBar.frame.size.height - navSystemLineH, MH_SCREEN_WIDTH, navSystemLineH)];
+//    navSystemLine.backgroundColor = MHColor(223.0f, 223.0f, 221.0f);
+//    [self.navigationBar addSubview:navSystemLine];
+//    self.navigationBottomLine = navSystemLine;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

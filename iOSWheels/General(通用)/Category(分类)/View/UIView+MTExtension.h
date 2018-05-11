@@ -31,4 +31,13 @@
  */
 - (UIViewController *)mt_viewController;
 
+
+
+/**
+ * xib创建的view
+ */
++ (instancetype)mt_viewFromXib;
+
+
+
 @end

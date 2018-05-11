@@ -366,6 +366,10 @@ static AFHTTPSessionManager *_sessionManager;
     _sessionManager = [AFHTTPSessionManager manager];
     _sessionManager.requestSerializer.timeoutInterval = 30.f;
     _sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/json", @"text/plain", @"text/javascript", @"text/xml", @"image/*", nil];
+    
+    //默认证书配置 先在这里写死 默认处理
+    NSString *cerPath = [[NSBundle mainBundle] pathForResource:@"Debug101_200_75_215" ofType:@"cer"];
+    [MTNetworkHelper setSecurityPolicyWithCerPath:cerPath validatesDomainName:NO];
 }
 
 
@@ -405,6 +409,67 @@ static AFHTTPSessionManager *_sessionManager;
     securityPolicy.pinnedCertificates = [[NSSet alloc] initWithObjects:cerData, nil];
     
     [_sessionManager setSecurityPolicy:securityPolicy];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma mark -------- RAC 网络请求扩展 ------
+
++ (RACSignal *)rac_POST:(NSString *)path parameters:(id)parameters {
+    
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        
+        [MTNetworkHelper POST:path parameters:parameters success:^(id responseObject) {
+            
+            MTHTTPResponse *model = [MTHTTPResponse mj_objectWithKeyValues:responseObject];
+            [subscriber sendNext:model];
+            [subscriber sendCompleted];
+            
+        } failure:^(NSError *error) {
+            
+            [subscriber sendError:error];
+            [subscriber sendCompleted];
+        }];
+        
+        return [RACDisposable disposableWithBlock:^{}];
+        
+    }];
+}
+
+
+
+
++ (RACSignal *)rac_GET:(NSString *)path parameters:(id)parameters {
+    
+    return [[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        
+        [MTNetworkHelper GET:path parameters:parameters success:^(id responseObject) {
+            
+            MTHTTPResponse *model = [MTHTTPResponse mj_objectWithKeyValues:responseObject];
+            
+            [subscriber sendNext:model];
+            [subscriber sendCompleted];
+            
+        } failure:^(NSError *error) {
+            
+            [subscriber sendError:error];
+            [subscriber sendCompleted];
+        }];
+        
+        return [RACDisposable disposableWithBlock:^{}];
+        
+    }] setNameWithFormat:@"%@ -rac_GET: %@, parameters: %@", self.class, path, parameters];
+    
 }
 
 
