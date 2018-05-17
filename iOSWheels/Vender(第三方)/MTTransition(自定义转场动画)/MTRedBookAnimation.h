@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MTRedBookAnimation : NSObject
+@interface MTRedBookAnimation : NSObject <UIViewControllerAnimatedTransitioning>
+
+///动画时长
+@property (nonatomic, assign) NSTimeInterval animationDuration;
+
 
 @end

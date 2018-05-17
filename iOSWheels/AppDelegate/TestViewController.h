@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 
-@interface TestViewController : BaseViewController
+@interface TestViewController : BaseViewController<MTTransitionProtocol>
 
 @end

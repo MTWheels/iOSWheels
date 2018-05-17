@@ -77,6 +77,10 @@
 }
 
 
+- (UIView *)targetTransitionView {
+    return [self.homeView.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForItem:1 inSection:0]];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

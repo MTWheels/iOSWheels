@@ -34,6 +34,9 @@
 #define kScreenHeight ([[UIScreen mainScreen] bounds].size.height)
 #define kScreenBounds ([[UIScreen mainScreen] bounds])
 
+#define kWIDTHBASE (kScreenWith/375.0f)
+
+
 
 
 /// 手机类型相关
@@ -80,6 +83,9 @@
 
 ///其他常量配置
 #import "kConstEnum.h"
+///网络请求域名 或者 IP
+#import "NetWorkHeader.h"
+
 
 
 #endif /* kInterface_h */

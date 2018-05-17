@@ -7,8 +7,9 @@
 //
 
 #import "BaseNavigationController.h"
+#import "MTRedBookAnimation.h"
 
-@interface BaseNavigationController ()
+@interface BaseNavigationController ()<UINavigationControllerDelegate>
 
 /// 导航栏分隔线
 @property (nonatomic , weak , readwrite) UIImageView * navigationBottomLine;
@@ -19,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.delegate = self;
     [self _setup];
 }
 
@@ -55,6 +56,37 @@
 //    [self.navigationBar addSubview:navSystemLine];
 //    self.navigationBottomLine = navSystemLine;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma mark ————— 转场动画区 —————
+
+
+- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC {
+    
+    if (operation == UINavigationControllerOperationPush) {
+        
+        return [[MTRedBookAnimation alloc] init];
+    }
+    
+    return nil;
+}
+
+
+
 
 
 - (void)didReceiveMemoryWarning {
