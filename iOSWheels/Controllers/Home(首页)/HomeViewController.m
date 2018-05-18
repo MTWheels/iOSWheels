@@ -27,7 +27,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-   
 }
 
 
@@ -50,6 +49,12 @@
 #pragma mark --- private
 - (void)mt_addSubviews {
     [self.view addSubview:self.homeView];
+    
+    [NSObject mt_showAlertWithTitle:@"标题" message:@"文本玛莎拉蒂减肥凉水减肥拉伸将分类看阿里看风景辣椒粉多啦理发师的骄傲快乐撒发动机 " confirmTitle:@"确定" cancleTitle:@"取消" confirmAction:^{
+        NSLog(@"确定事件");
+    } cancleAction:^{
+        NSLog(@"取消事件");
+    }];
 }
 
 

@@ -23,6 +23,7 @@
 
 ///NSObject 扩展
 #import "NSObject+MTExtension.h"
+#import "NSObject+MTAlert.h"
 
 ///NSString 扩展
 #import "NSString+MTSize.h"
@@ -57,6 +58,9 @@
 ///UIView
 #import "UIView+MTExtension.h"
 #import "UIView+ChainStyle.h"
+
+///UIAlertController
+#import "UIAlertController+MTExtension.h"
 
 
 #endif /* MTCategoryHeader_h */

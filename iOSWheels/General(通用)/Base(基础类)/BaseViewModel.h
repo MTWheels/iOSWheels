@@ -17,8 +17,8 @@
 
 
 
-///实例化时绑定RAC
-- (void)mt_bindRAC;
+/// sub class can override
+- (void)initialize;
 
 
 
