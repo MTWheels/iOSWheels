@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface UITextView (MTExtension)
 
 /// 限制最大长度
 - (void)mt_limitMaxLength:(NSInteger)maxLength;
+
+///if <=0, no limit
+@property (assign, nonatomic)  NSInteger jk_maxLength;
+
 
 @end

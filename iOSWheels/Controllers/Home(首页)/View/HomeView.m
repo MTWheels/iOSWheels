@@ -9,12 +9,12 @@
 #import "HomeView.h"
 #import "HomeViewModel.h"
 
+#import "TestViewController.h"
+
 @interface HomeView()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 /*ViewModel*/
 @property (nonatomic, strong) HomeViewModel *viewModel;
-/*列表*/
-@property (nonatomic, strong) UICollectionView *collectionView;
 
 @end
 
@@ -100,7 +100,7 @@
 
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake([UIScreen mainScreen].bounds.size.width, 300);
+    return CGSizeMake([UIScreen mainScreen].bounds.size.width, 200);
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -112,6 +112,13 @@
 }
 
 
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    TestViewController *testVC = [[TestViewController alloc] init];
+    
+    [self.mt_viewController.navigationController pushViewController:testVC animated:YES];
+}
 
 #pragma mark - lazyLoad
 

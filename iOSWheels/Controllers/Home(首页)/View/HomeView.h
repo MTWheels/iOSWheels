@@ -10,4 +10,7 @@
 
 @interface HomeView : BaseView
 
+/*列表*/
+@property (nonatomic, strong) UICollectionView *collectionView;
+
 @end

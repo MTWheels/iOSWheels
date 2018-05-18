@@ -34,6 +34,10 @@
     [self.view addSubview:self.btn];
     
     
+    
+    UIView *view1 = [[UIView alloc] initWithFrame:CGRectMake(0, 400, kScreenWith, 200)];
+    view1.backgroundColor = [UIColor purpleColor];
+    [self.view addSubview:view1];
 }
 
 
@@ -42,9 +46,10 @@
         _btn = Button
         .btnColor([UIColor redColor])
         .btnTitle(@"button")
-        .btnFrame(0, 100, 100, 150)
+        .btnFrame(0, 0, kScreenWith, 400)
         .btnFont([UIFont systemFontOfSize:35])
         .btnNormalImage(nil);
+        _btn.backgroundColor = [UIColor redColor];
     }
     return _btn;
 }
@@ -59,6 +64,10 @@
     }
 }
 
+
+- (UIView *)targetTransitionView {
+    return self.btn;
+}
 
 
 - (void)didReceiveMemoryWarning {

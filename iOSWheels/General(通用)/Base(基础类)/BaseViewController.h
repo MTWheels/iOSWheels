@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewControllerProtocol.h"
+#import "MTTransitionProtocol.h"
 
 
 @interface BaseViewController : UIViewController<BaseViewControllerProtocol>

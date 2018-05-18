@@ -40,4 +40,12 @@
 
 
 
+
+/**
+    截图
+ */
+- (nullable UIImage *)mt_snapshotImage;
+
+
+
 @end

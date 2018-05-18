@@ -48,15 +48,17 @@
 
 
 
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
+
+
 #pragma mark  ------- 用来检查 当前试图控制器内存是否被释放 ------
 - (void)dealloc{
     NSLog(@"✅dealloc  %@  '%@'",self.class, NSStringFromSelector(_cmd));
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
 
 
 @end
