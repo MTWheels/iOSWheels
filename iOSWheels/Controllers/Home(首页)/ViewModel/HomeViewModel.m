@@ -68,6 +68,7 @@
 
 
 
+
 - (RACCommand *)nextPageCommand {
     if (!_nextPageCommand) {
         @weakify(self)

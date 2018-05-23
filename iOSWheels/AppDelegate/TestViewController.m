@@ -38,6 +38,8 @@
     UIView *view1 = [[UIView alloc] initWithFrame:CGRectMake(0, 400, kScreenWith, 200)];
     view1.backgroundColor = [UIColor purpleColor];
     [self.view addSubview:view1];
+    
+    
 }
 
 

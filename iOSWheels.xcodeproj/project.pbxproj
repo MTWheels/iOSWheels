@@ -19,6 +19,7 @@
 		BA3B54B3207A0AA500C16489 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3B54B2207A0AA500C16489 /* Person.m */; };
 		BA3B54B6207A0AEA00C16489 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3B54B5207A0AEA00C16489 /* Student.m */; };
 		BA3B54B9207A143200C16489 /* MTFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3B54B8207A143200C16489 /* MTFoundation.m */; };
+		BA4FC32A20B5525100544C38 /* NSObject+MTGCD.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4FC32920B5525100544C38 /* NSObject+MTGCD.m */; };
 		BA511DC02077C8E1000A6954 /* MTNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BA511DBF2077C8E1000A6954 /* MTNetworkCache.m */; };
 		BA511DC32077CA4F000A6954 /* MTNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BA511DC22077CA4F000A6954 /* MTNetworkHelper.m */; };
 		BA6D8BE4208985600060C2D7 /* NSObject+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6D8BE3208985600060C2D7 /* NSObject+MTExtension.m */; };
@@ -90,6 +91,8 @@
 		BA3B54B5207A0AEA00C16489 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		BA3B54B7207A143200C16489 /* MTFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTFoundation.h; sourceTree = "<group>"; };
 		BA3B54B8207A143200C16489 /* MTFoundation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTFoundation.m; sourceTree = "<group>"; };
+		BA4FC32820B5525100544C38 /* NSObject+MTGCD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MTGCD.h"; sourceTree = "<group>"; };
+		BA4FC32920B5525100544C38 /* NSObject+MTGCD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MTGCD.m"; sourceTree = "<group>"; };
 		BA511DBE2077C8E1000A6954 /* MTNetworkCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTNetworkCache.h; sourceTree = "<group>"; };
 		BA511DBF2077C8E1000A6954 /* MTNetworkCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTNetworkCache.m; sourceTree = "<group>"; };
 		BA511DC12077CA4F000A6954 /* MTNetworkHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTNetworkHelper.h; sourceTree = "<group>"; };
@@ -318,6 +321,8 @@
 				BA6D8BE3208985600060C2D7 /* NSObject+MTExtension.m */,
 				BAAAFBF320AE7B150015814A /* NSObject+MTAlert.h */,
 				BAAAFBF420AE7B150015814A /* NSObject+MTAlert.m */,
+				BA4FC32820B5525100544C38 /* NSObject+MTGCD.h */,
+				BA4FC32920B5525100544C38 /* NSObject+MTGCD.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -832,6 +837,7 @@
 				BA3B54B9207A143200C16489 /* MTFoundation.m in Sources */,
 				BAB4575D209AF9960093106C /* HomeViewModel.m in Sources */,
 				BAB45760209AFCBD0093106C /* BaseView.m in Sources */,
+				BA4FC32A20B5525100544C38 /* NSObject+MTGCD.m in Sources */,
 				BA3B54A72079E2F800C16489 /* MTDBHelper.m in Sources */,
 				BAF4AAE520723E1A00AA8934 /* UICollectionView+MTExtension.m in Sources */,
 			);

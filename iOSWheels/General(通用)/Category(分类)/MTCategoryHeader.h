@@ -24,6 +24,7 @@
 ///NSObject 扩展
 #import "NSObject+MTExtension.h"
 #import "NSObject+MTAlert.h"
+#import "NSObject+MTGCD.h"
 
 ///NSString 扩展
 #import "NSString+MTSize.h"
