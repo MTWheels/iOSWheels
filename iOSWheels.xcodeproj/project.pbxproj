@@ -20,6 +20,7 @@
 		BA3B54B6207A0AEA00C16489 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3B54B5207A0AEA00C16489 /* Student.m */; };
 		BA3B54B9207A143200C16489 /* MTFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3B54B8207A143200C16489 /* MTFoundation.m */; };
 		BA4FC32A20B5525100544C38 /* NSObject+MTGCD.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4FC32920B5525100544C38 /* NSObject+MTGCD.m */; };
+		BA4FC32D20B5541A00544C38 /* NSObject+MTKVOBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4FC32C20B5541A00544C38 /* NSObject+MTKVOBlocks.m */; };
 		BA511DC02077C8E1000A6954 /* MTNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BA511DBF2077C8E1000A6954 /* MTNetworkCache.m */; };
 		BA511DC32077CA4F000A6954 /* MTNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BA511DC22077CA4F000A6954 /* MTNetworkHelper.m */; };
 		BA6D8BE4208985600060C2D7 /* NSObject+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6D8BE3208985600060C2D7 /* NSObject+MTExtension.m */; };
@@ -93,6 +94,8 @@
 		BA3B54B8207A143200C16489 /* MTFoundation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTFoundation.m; sourceTree = "<group>"; };
 		BA4FC32820B5525100544C38 /* NSObject+MTGCD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MTGCD.h"; sourceTree = "<group>"; };
 		BA4FC32920B5525100544C38 /* NSObject+MTGCD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MTGCD.m"; sourceTree = "<group>"; };
+		BA4FC32B20B5541A00544C38 /* NSObject+MTKVOBlocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MTKVOBlocks.h"; sourceTree = "<group>"; };
+		BA4FC32C20B5541A00544C38 /* NSObject+MTKVOBlocks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MTKVOBlocks.m"; sourceTree = "<group>"; };
 		BA511DBE2077C8E1000A6954 /* MTNetworkCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTNetworkCache.h; sourceTree = "<group>"; };
 		BA511DBF2077C8E1000A6954 /* MTNetworkCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTNetworkCache.m; sourceTree = "<group>"; };
 		BA511DC12077CA4F000A6954 /* MTNetworkHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTNetworkHelper.h; sourceTree = "<group>"; };
@@ -323,6 +326,8 @@
 				BAAAFBF420AE7B150015814A /* NSObject+MTAlert.m */,
 				BA4FC32820B5525100544C38 /* NSObject+MTGCD.h */,
 				BA4FC32920B5525100544C38 /* NSObject+MTGCD.m */,
+				BA4FC32B20B5541A00544C38 /* NSObject+MTKVOBlocks.h */,
+				BA4FC32C20B5541A00544C38 /* NSObject+MTKVOBlocks.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -813,6 +818,7 @@
 				EDC81078206CDBEB006325B4 /* main.m in Sources */,
 				BAB45733209AA1E70093106C /* UIButton+ChainStyle.m in Sources */,
 				BAF4AAD12071DB3000AA8934 /* TestViewController.m in Sources */,
+				BA4FC32D20B5541A00544C38 /* NSObject+MTKVOBlocks.m in Sources */,
 				BAAAFBF520AE7B150015814A /* NSObject+MTAlert.m in Sources */,
 				BA6D8BE4208985600060C2D7 /* NSObject+MTExtension.m in Sources */,
 				BAB45741209AF0530093106C /* BaseTabBarController.m in Sources */,
