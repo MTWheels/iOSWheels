@@ -13,6 +13,7 @@ pod 'FMDB'
 pod 'MJExtension'
 #下拉刷新
 pod 'MJRefresh'
+pod 'CYLTabBarController'
 
 
 pod 'ReactiveCocoa', '~> 2.5'

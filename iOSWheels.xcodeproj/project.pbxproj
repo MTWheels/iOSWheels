@@ -21,9 +21,11 @@
 		BA3B54B9207A143200C16489 /* MTFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3B54B8207A143200C16489 /* MTFoundation.m */; };
 		BA4FC32A20B5525100544C38 /* NSObject+MTGCD.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4FC32920B5525100544C38 /* NSObject+MTGCD.m */; };
 		BA4FC32D20B5541A00544C38 /* NSObject+MTKVOBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4FC32C20B5541A00544C38 /* NSObject+MTKVOBlocks.m */; };
+		BA4FC33120B5593F00544C38 /* UIApplication+JKKeyboardFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4FC32F20B5593F00544C38 /* UIApplication+JKKeyboardFrame.m */; };
 		BA511DC02077C8E1000A6954 /* MTNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BA511DBF2077C8E1000A6954 /* MTNetworkCache.m */; };
 		BA511DC32077CA4F000A6954 /* MTNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BA511DC22077CA4F000A6954 /* MTNetworkHelper.m */; };
 		BA6D8BE4208985600060C2D7 /* NSObject+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6D8BE3208985600060C2D7 /* NSObject+MTExtension.m */; };
+		BAAA679920C77DC7004C11BA /* MTImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAA679820C77DC7004C11BA /* MTImageManager.m */; };
 		BAAAFBF520AE7B150015814A /* NSObject+MTAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAAFBF420AE7B150015814A /* NSObject+MTAlert.m */; };
 		BAAAFBF920AE7DDE0015814A /* UIAlertController+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAAFBF820AE7DDE0015814A /* UIAlertController+MTExtension.m */; };
 		BAAD582F20AD21F60006E863 /* UIFont+MTAdjustFont.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAD582E20AD21F60006E863 /* UIFont+MTAdjustFont.m */; };
@@ -96,6 +98,8 @@
 		BA4FC32920B5525100544C38 /* NSObject+MTGCD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MTGCD.m"; sourceTree = "<group>"; };
 		BA4FC32B20B5541A00544C38 /* NSObject+MTKVOBlocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MTKVOBlocks.h"; sourceTree = "<group>"; };
 		BA4FC32C20B5541A00544C38 /* NSObject+MTKVOBlocks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MTKVOBlocks.m"; sourceTree = "<group>"; };
+		BA4FC32F20B5593F00544C38 /* UIApplication+JKKeyboardFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+JKKeyboardFrame.m"; sourceTree = "<group>"; };
+		BA4FC33020B5593F00544C38 /* UIApplication+JKKeyboardFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+JKKeyboardFrame.h"; sourceTree = "<group>"; };
 		BA511DBE2077C8E1000A6954 /* MTNetworkCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTNetworkCache.h; sourceTree = "<group>"; };
 		BA511DBF2077C8E1000A6954 /* MTNetworkCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTNetworkCache.m; sourceTree = "<group>"; };
 		BA511DC12077CA4F000A6954 /* MTNetworkHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTNetworkHelper.h; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 		BA69174A20A2D041008BFCBA /* NetWorkHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkHeader.h; sourceTree = "<group>"; };
 		BA6D8BE2208985600060C2D7 /* NSObject+MTExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MTExtension.h"; sourceTree = "<group>"; };
 		BA6D8BE3208985600060C2D7 /* NSObject+MTExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MTExtension.m"; sourceTree = "<group>"; };
+		BAAA679720C77DC7004C11BA /* MTImageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTImageManager.h; sourceTree = "<group>"; };
+		BAAA679820C77DC7004C11BA /* MTImageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTImageManager.m; sourceTree = "<group>"; };
 		BAAAFBF320AE7B150015814A /* NSObject+MTAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MTAlert.h"; sourceTree = "<group>"; };
 		BAAAFBF420AE7B150015814A /* NSObject+MTAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MTAlert.m"; sourceTree = "<group>"; };
 		BAAAFBF720AE7DDE0015814A /* UIAlertController+MTExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+MTExtension.h"; sourceTree = "<group>"; };
@@ -270,6 +276,15 @@
 			path = "FMDBManage(数据库)";
 			sourceTree = "<group>";
 		};
+		BA4FC32E20B5591F00544C38 /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				BA4FC33020B5593F00544C38 /* UIApplication+JKKeyboardFrame.h */,
+				BA4FC32F20B5593F00544C38 /* UIApplication+JKKeyboardFrame.m */,
+			);
+			path = UIApplication;
+			sourceTree = "<group>";
+		};
 		BA511DB92077C7D3000A6954 /* Vender(第三方) */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +313,7 @@
 		BA511DBC2077C851000A6954 /* Tool(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				BAAA679620C77DA0004C11BA /* 相册管理 */,
 				BA0ED832209D4438001C0555 /* Singleton */,
 				BA3B549F2079B36600C16489 /* View */,
 			);
@@ -330,6 +346,15 @@
 				BA4FC32C20B5541A00544C38 /* NSObject+MTKVOBlocks.m */,
 			);
 			path = NSObject;
+			sourceTree = "<group>";
+		};
+		BAAA679620C77DA0004C11BA /* 相册管理 */ = {
+			isa = PBXGroup;
+			children = (
+				BAAA679720C77DC7004C11BA /* MTImageManager.h */,
+				BAAA679820C77DC7004C11BA /* MTImageManager.m */,
+			);
+			path = "相册管理";
 			sourceTree = "<group>";
 		};
 		BAAAFBF620AE7DC20015814A /* UIAlertController */ = {
@@ -602,6 +627,7 @@
 		EDC81082206CDC31006325B4 /* Category(分类) */ = {
 			isa = PBXGroup;
 			children = (
+				BA4FC32E20B5591F00544C38 /* UIApplication */,
 				BAAAFBF620AE7DC20015814A /* UIAlertController */,
 				BAAD582B20AD216E0006E863 /* UIFont */,
 				BA39EBAC20AA834C00010201 /* RAC */,
@@ -620,7 +646,7 @@
 				EDC81083206CDC31006325B4 /* UIButton */,
 				EDC81086206CDC31006325B4 /* UIColor */,
 				EDC81089206CDC31006325B4 /* NSArray */,
-				EDC8108C206CDC31006325B4 /* View */,
+				EDC8108C206CDC31006325B4 /* UIView */,
 				BAAD583020AD22AE0006E863 /* MTCategoryHeader.h */,
 			);
 			path = "Category(分类)";
@@ -653,7 +679,7 @@
 			path = NSArray;
 			sourceTree = "<group>";
 		};
-		EDC8108C206CDC31006325B4 /* View */ = {
+		EDC8108C206CDC31006325B4 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
 				EDC8108D206CDC31006325B4 /* UIView+MTExtension.h */,
@@ -661,7 +687,7 @@
 				BAB45734209AB6160093106C /* UIView+ChainStyle.h */,
 				BAB45735209AB6160093106C /* UIView+ChainStyle.m */,
 			);
-			path = View;
+			path = UIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -742,6 +768,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOSWheels/Pods-iOSWheels-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/CYLTabBarController/CYLTabBarController.framework",
 				"${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework",
 				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
@@ -756,6 +783,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CYLTabBarController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBRetainCycleDetector.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
@@ -800,6 +828,7 @@
 				BAAD582F20AD21F60006E863 /* UIFont+MTAdjustFont.m in Sources */,
 				BACD6BAB209C6A2900DFDB90 /* UITextView+MTExtension.m in Sources */,
 				BAF4AAD520720BE900AA8934 /* UIDevice+MTExtension.m in Sources */,
+				BAAA679920C77DC7004C11BA /* MTImageManager.m in Sources */,
 				EDC81093206CDC32006325B4 /* UIView+MTExtension.m in Sources */,
 				BA3B54AD2079F42B00C16489 /* MTDBUtils.m in Sources */,
 				BA511DC02077C8E1000A6954 /* MTNetworkCache.m in Sources */,
@@ -833,6 +862,7 @@
 				BACD6BA7209C67B600DFDB90 /* UITextField+MTExtension.m in Sources */,
 				BA39EBB320AAC22800010201 /* UIViewController+MTTransition.m in Sources */,
 				BA511DC32077CA4F000A6954 /* MTNetworkHelper.m in Sources */,
+				BA4FC33120B5593F00544C38 /* UIApplication+JKKeyboardFrame.m in Sources */,
 				BAF4AAE12072163600AA8934 /* NSDate+MTExtension.m in Sources */,
 				BAD9F73F207369A500D24C37 /* NSString+MTSize.m in Sources */,
 				BAB45748209AF2A90093106C /* BaseViewModel.m in Sources */,

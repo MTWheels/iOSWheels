@@ -26,7 +26,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    RACSignal *signal = [RACSignal never];
     
+    [signal subscribeCompleted:^{
+        NSLog(@"订阅完成");
+    }];
+    
+    
+    [signal subscribeNext:^(id x) {
+        NSLog(@"接收订阅信息");
+    }];
+    
+    
+    [signal subscribeError:^(NSError *error) {
+        NSLog(@"订阅失败。。。");
+    }];
 }
 
 

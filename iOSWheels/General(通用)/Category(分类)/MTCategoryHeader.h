@@ -25,6 +25,7 @@
 #import "NSObject+MTExtension.h"
 #import "NSObject+MTAlert.h"
 #import "NSObject+MTGCD.h"
+#import "NSObject+MTKVOBlocks.h"
 
 ///NSString 扩展
 #import "NSString+MTSize.h"
@@ -62,6 +63,9 @@
 
 ///UIAlertController
 #import "UIAlertController+MTExtension.h"
+
+///UIApplication
+#import "UIApplication+JKKeyboardFrame.h"
 
 
 #endif /* MTCategoryHeader_h */

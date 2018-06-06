@@ -20,6 +20,7 @@
 #import "MLeaksFinder.h"
 //数据安全
 #import "SafeObject.h"
+#import "CYLTabBarController.h"
 
 //网络请求类
 #import "MTNetworkHelper.h"

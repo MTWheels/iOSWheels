@@ -56,14 +56,6 @@
 
 
 
-
-
-
-
-
-
-
-
 #pragma mark - 正则相关
 + (BOOL)isValidateByRegex:(NSString *)regex
 {
