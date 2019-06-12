@@ -39,9 +39,9 @@ typedef void(^BtnBlock)(void);
 /**按钮是否圆角*/
 @property (nonatomic, assign)           BOOL                      mt_btnIsCornerRadius;
 /**按钮title颜色*/
-@property (nonatomic, strong)           UIColor                   *mt_btnTitleColor;
+@property (nonatomic, strong)           UIColor                   *_Nullable mt_btnTitleColor;
 /**BtnClickBlock*/
-@property (nonatomic, copy)             BtnBlock                  mt_btnClickBlock;
+@property (nonatomic, copy)             BtnBlock                   _Nonnull mt_btnClickBlock;
 /**按钮图片*/
 @property (nonatomic, strong, nullable) UIImage                   *mt_btnImage;
 /**btnTitle字体*/

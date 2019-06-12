@@ -392,7 +392,7 @@ static char const * const kEmptyBtnTitleFont         =       "mt_btnTitleFont";
     if (!_contentView)
     {
         _contentView = [UIView new];
-        _contentView.translatesAutoresizingMaskIntoConstraints = NO;
+//        _contentView.translatesAutoresizingMaskIntoConstraints = NO;
         _contentView.backgroundColor = [UIColor whiteColor];
         _contentView.userInteractionEnabled = YES;
         _contentView.alpha = 1;
@@ -406,11 +406,11 @@ static char const * const kEmptyBtnTitleFont         =       "mt_btnTitleFont";
     if (!_imageView)
     {
         _imageView = [UIImageView new];
-        _imageView.translatesAutoresizingMaskIntoConstraints = NO;
+//        _imageView.translatesAutoresizingMaskIntoConstraints = NO;
         _imageView.backgroundColor = [UIColor clearColor];
         _imageView.contentMode = UIViewContentModeScaleAspectFit;
         _imageView.userInteractionEnabled = NO;
-        _imageView.accessibilityIdentifier = @"empty set background image";
+//        _imageView.accessibilityIdentifier = @"empty set background image";
         
         [self.contentView addSubview:_imageView];
     }
@@ -422,14 +422,14 @@ static char const * const kEmptyBtnTitleFont         =       "mt_btnTitleFont";
     if (!_titleLabel)
     {
         _titleLabel = [UILabel new];
-        _titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
+//        _titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
         _titleLabel.backgroundColor = [UIColor clearColor];
         _titleLabel.font = [UIFont systemFontOfSize:27.0];
         _titleLabel.textColor = [UIColor colorWithWhite:0.6 alpha:1.0];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
         _titleLabel.numberOfLines = 0;
-        _titleLabel.accessibilityIdentifier = @"empty set title";
+//        _titleLabel.accessibilityIdentifier = @"empty set title";
         [self.contentView addSubview:_titleLabel];
     }
     return _titleLabel;
@@ -439,13 +439,13 @@ static char const * const kEmptyBtnTitleFont         =       "mt_btnTitleFont";
 {
     if (!_button)
     {
-        _button = [UIButton buttonWithType:UIButtonTypeCustom];
-        _button.translatesAutoresizingMaskIntoConstraints = NO;
+        _button = [[UIButton alloc] init];
+//        _button.translatesAutoresizingMaskIntoConstraints = NO;
         _button.backgroundColor = [UIColor blueColor];
         [_button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         _button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
         _button.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
-        _button.accessibilityIdentifier = @"empty set button";
+//        _button.accessibilityIdentifier = @"empty set button";
         _button.clipsToBounds = YES;
         _button.titleLabel.font = [UIFont systemFontOfSize:14];
         [_button addTarget:self action:@selector(didTapButton:) forControlEvents:UIControlEventTouchUpInside];

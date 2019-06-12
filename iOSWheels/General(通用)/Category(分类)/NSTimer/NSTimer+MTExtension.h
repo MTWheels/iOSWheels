@@ -24,7 +24,6 @@ typedef void (^MTTimerCallBack)(NSTimer *timer);
 
 /**
  Creates and returns a new NSTimer object initialized with the specified block object and schedules it on the current run loop in the default mode.
- 
  @param interval 时间
  @param repeats 是否重复执行
  @param callback 执行回调
@@ -41,7 +40,6 @@ typedef void (^MTTimerCallBack)(NSTimer *timer);
 
 /**
  Creates and returns a new NSTimer object initialized with the specified block object and schedules it on the current run loop in the default mode.
-
  @param interval 时间
  @param count 重复执行次数  小于等于0时 默认一直循环
  @param callback 执行回调
