@@ -14,7 +14,8 @@
 
 /** 占位文字的颜色 */
 @property (nonatomic, strong) UIColor   *placeholderColor;
-
+/** 占位文字字体 */
+@property (nonatomic, strong) UIFont   *placeholderFont;
 /** 最小高度,默认高度 */
 @property (nonatomic, assign) CGFloat   minHeight;
 

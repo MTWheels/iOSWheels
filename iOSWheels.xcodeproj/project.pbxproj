@@ -11,7 +11,6 @@
 		BA0ED844209DEFE4001C0555 /* MTHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0ED843209DEFE4001C0555 /* MTHTTPResponse.m */; };
 		BA39EBB320AAC22800010201 /* UIViewController+MTTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = BA39EBB220AAC22800010201 /* UIViewController+MTTransition.m */; };
 		BA39EBB620AAC30000010201 /* MTRedBookAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = BA39EBB520AAC30000010201 /* MTRedBookAnimation.m */; };
-		BA3B54A32079B36600C16489 /* MTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3B54A12079B36600C16489 /* MTTextView.m */; };
 		BA3B54A72079E2F800C16489 /* MTDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3B54A62079E2F800C16489 /* MTDBHelper.m */; };
 		BA3B54AA2079EAAA00C16489 /* NSObject+MTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3B54A92079EAAA00C16489 /* NSObject+MTModel.m */; };
 		BA3B54AD2079F42B00C16489 /* MTDBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3B54AC2079F42B00C16489 /* MTDBUtils.m */; };
@@ -52,6 +51,7 @@
 		BAF4AADD207213EC00AA8934 /* UIViewController+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF4AADC207213EC00AA8934 /* UIViewController+MTExtension.m */; };
 		BAF4AAE12072163600AA8934 /* NSDate+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF4AAE02072163600AA8934 /* NSDate+MTExtension.m */; };
 		BAF4AAE520723E1A00AA8934 /* UICollectionView+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF4AAE420723E1A00AA8934 /* UICollectionView+MTExtension.m */; };
+		ED2B2363257504910056B54E /* MTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2B2362257504910056B54E /* MTTextView.m */; };
 		EDC7E4DD22B0D77400267FA4 /* UIScrollView+MTEmptyData.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC7E4DB22B0D77400267FA4 /* UIScrollView+MTEmptyData.m */; };
 		EDC8106A206CDBEB006325B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC81069206CDBEB006325B4 /* AppDelegate.m */; };
 		EDC8106D206CDBEB006325B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC8106C206CDBEB006325B4 /* ViewController.m */; };
@@ -78,8 +78,6 @@
 		BA39EBB520AAC30000010201 /* MTRedBookAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTRedBookAnimation.m; sourceTree = "<group>"; };
 		BA39EBB720AAC47000010201 /* MTTransitionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTransitionProtocol.h; sourceTree = "<group>"; };
 		BA3B549E2079AC0B00C16489 /* kInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kInterface.h; sourceTree = "<group>"; };
-		BA3B54A12079B36600C16489 /* MTTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTextView.m; sourceTree = "<group>"; };
-		BA3B54A22079B36600C16489 /* MTTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTextView.h; sourceTree = "<group>"; };
 		BA3B54A52079E2F700C16489 /* MTDBHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTDBHelper.h; sourceTree = "<group>"; };
 		BA3B54A62079E2F800C16489 /* MTDBHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTDBHelper.m; sourceTree = "<group>"; };
 		BA3B54A82079EAAA00C16489 /* NSObject+MTModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MTModel.h"; sourceTree = "<group>"; };
@@ -164,6 +162,8 @@
 		BAF4AAE02072163600AA8934 /* NSDate+MTExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MTExtension.m"; sourceTree = "<group>"; };
 		BAF4AAE320723E1A00AA8934 /* UICollectionView+MTExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+MTExtension.h"; sourceTree = "<group>"; };
 		BAF4AAE420723E1A00AA8934 /* UICollectionView+MTExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+MTExtension.m"; sourceTree = "<group>"; };
+		ED2B2361257504900056B54E /* MTTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTextView.h; sourceTree = "<group>"; };
+		ED2B2362257504910056B54E /* MTTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTextView.m; sourceTree = "<group>"; };
 		EDC7E4DB22B0D77400267FA4 /* UIScrollView+MTEmptyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MTEmptyData.m"; sourceTree = "<group>"; };
 		EDC7E4DC22B0D77400267FA4 /* UIScrollView+MTEmptyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MTEmptyData.h"; sourceTree = "<group>"; };
 		EDC81065206CDBEA006325B4 /* iOSWheels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSWheels.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -253,8 +253,8 @@
 		BA3B54A02079B36600C16489 /* UITextView */ = {
 			isa = PBXGroup;
 			children = (
-				BA3B54A22079B36600C16489 /* MTTextView.h */,
-				BA3B54A12079B36600C16489 /* MTTextView.m */,
+				ED2B2361257504900056B54E /* MTTextView.h */,
+				ED2B2362257504910056B54E /* MTTextView.m */,
 			);
 			path = UITextView;
 			sourceTree = "<group>";
@@ -855,12 +855,12 @@
 				BA3B54AA2079EAAA00C16489 /* NSObject+MTModel.m in Sources */,
 				BAB45736209AB6160093106C /* UIView+ChainStyle.m in Sources */,
 				BAB4574F209AF60C0093106C /* HomeViewController.m in Sources */,
-				BA3B54A32079B36600C16489 /* MTTextView.m in Sources */,
 				EDC8106A206CDBEB006325B4 /* AppDelegate.m in Sources */,
 				BA0ED844209DEFE4001C0555 /* MTHTTPResponse.m in Sources */,
 				BAAAFBF920AE7DDE0015814A /* UIAlertController+MTExtension.m in Sources */,
 				BACD6BA7209C67B600DFDB90 /* UITextField+MTExtension.m in Sources */,
 				BA39EBB320AAC22800010201 /* UIViewController+MTTransition.m in Sources */,
+				ED2B2363257504910056B54E /* MTTextView.m in Sources */,
 				BA511DC32077CA4F000A6954 /* MTNetworkHelper.m in Sources */,
 				BA4FC33120B5593F00544C38 /* UIApplication+JKKeyboardFrame.m in Sources */,
 				BAF4AAE12072163600AA8934 /* NSDate+MTExtension.m in Sources */,

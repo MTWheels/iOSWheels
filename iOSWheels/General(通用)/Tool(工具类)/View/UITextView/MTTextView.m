@@ -16,6 +16,12 @@
 
 @implementation MTTextView
 
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+     [self commonInit];
+}
+
 + (instancetype)textViewWithFrame:(CGRect)frame placeholder:(NSString *)placeholder  height:(void (^)(CGFloat textViewHeight,MTTextView *textView))textViewTextHeightBlock{
     MTTextView *textView = [[self alloc] initWithFrame:frame];
     textView.textViewTextHeightBlock = textViewTextHeightBlock;
@@ -46,8 +52,11 @@
 #pragma mark - Observers & Notifications
 - (void)didChangeTextView:(NSNotification *)notification
 {
-    if (self.placeholder.length > 0) {
-        self.placeholderLabel.hidden = (self.text.length > 0) ? YES : NO;
+    MTTextView *textView = notification.object;
+    if (textView.text.length == 0) {
+        self.placeholderLabel.hidden = NO;
+    }else{
+        self.placeholderLabel.hidden = YES;
     }
 }
 
@@ -84,11 +93,12 @@
 {
     _placeholder = placeholder;
     self.placeholderLabel.text = placeholder;
-    if (self.text.length == 0 && self.placeholder.length > 0) {
-        [self.placeholderLabel sizeToFit];
-        [self addSubview:self.placeholderLabel];
-        self.placeholderLabel.hidden = NO;
-        [self sendSubviewToBack:self.placeholderLabel];
+    [self.placeholderLabel sizeToFit];
+    self.placeholderLabel.frame = CGRectMake(8, 7,self.bounds.size.width - 8,self.placeholderLabel.frame.size.height);
+    [self addSubview:self.placeholderLabel];
+    [self sendSubviewToBack:self.placeholderLabel];
+    if (self.text.length > 0 && self.placeholder.length > 0) {
+        self.placeholderLabel.hidden = YES;
     }
 }
 
@@ -102,18 +112,22 @@
     return self.placeholderLabel.textColor;
 }
 
+- (void)setPlaceholderFont:(UIFont *)placeholderFont
+{
+    _placeholderFont = placeholderFont;
+    self.placeholderLabel.font = placeholderFont;
+}
+
 - (UILabel *)placeholderLabel
 {
     if (!_placeholderLabel){
         _placeholderLabel = [[UILabel alloc] init];
-        _placeholderLabel.clipsToBounds = NO;
-        _placeholderLabel.autoresizesSubviews = NO;
-        _placeholderLabel.numberOfLines = 1;
-        _placeholderLabel.font = [UIFont systemFontOfSize:12];
+        _placeholderLabel.numberOfLines = 0;
+        _placeholderLabel.font = [UIFont systemFontOfSize:14];
         _placeholderLabel.backgroundColor = [UIColor clearColor];
         _placeholderLabel.textColor = [UIColor lightGrayColor];
         _placeholderLabel.hidden = NO;
-        _placeholderLabel.frame = CGRectMake(8, 7,0,0);
+
     }
     return _placeholderLabel;
 }
