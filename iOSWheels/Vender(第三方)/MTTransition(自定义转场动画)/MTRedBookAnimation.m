@@ -15,6 +15,7 @@
 ///缩放比例
 @property (nonatomic, assign) CGFloat animationScale;
 
+
 @end
 
 @implementation MTRedBookAnimation
